@@ -8,8 +8,7 @@
 
 ## Medium Priority
 
-- [ ] Refactor legacy codebase (due: 2022-03-01)
-- [ ] Improve performance of search feature (due: 2022-03-15)
+- [ ] i8n English as Base Language (due: 2023-10-21)
 
 ## Low Priority
 
