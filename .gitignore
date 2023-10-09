@@ -3,3 +3,6 @@ __pycache__
 
 # Logs
 logs/*.log
+
+# TODO
+# TODO.md

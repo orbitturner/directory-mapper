@@ -2,7 +2,9 @@
 import os
 from loguru import logger
 import argparse
+import sys
 from arborescence_util import dessiner_arborescence, creer_arborescence, afficher_arborescence_format
+
 
 if __name__ == "__main__":
     # Configurer les paramètres en ligne de commande
@@ -16,8 +18,11 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    logger.remove()
     # Configurer les logs avec Loguru
-    logger.add("logs/structure_dossier.log", rotation="10 MB", level="INFO")
+    logger.add("logs/structure_dossier.log", rotation="10 MB", level="DEBUG")
+    # Ajouter un autre gestionnaire pour la console, mais uniquement pour les niveaux INFO et supérieurs
+    logger.add(sys.stdout, level="INFO")
 
     # Vérifier si le chemin existe
     if os.path.exists(args.chemin_dossier):

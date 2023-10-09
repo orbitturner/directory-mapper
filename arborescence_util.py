@@ -1,11 +1,13 @@
 # arborescence_util.py
 import os
+import sys
 import json
 import re
 from loguru import logger
 import yaml
 
 file_identifier = "File"
+
 
 def dessiner_arborescence(dossier, prefixe="", ignore_dossiers=None, ignore_regex=None):
     # Récupérer la liste des éléments dans le dossier
