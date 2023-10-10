@@ -9,6 +9,10 @@
 ## Medium Priority
 
 - [ ] i8n English as Base Language (due: 2023-10-21)
+- [ ] Add Possibility to add content to files
+- [ ] Add Possibility to Export Folder & File Content into One File
+- [ ] Add Possibility to Compress Folder & File Content into One File
+
 
 ## Low Priority
 
