@@ -3,10 +3,18 @@ import os
 from loguru import logger
 import argparse
 import sys
+from art import text2art
+from termcolor import colored
 from arborescence_util import dessiner_arborescence, creer_arborescence, afficher_arborescence_format
 
 
+def print_colored_ascii_art():
+    text = "Orbit Directory Mapper"
+    colored_ascii_art = colored(text2art(text), 'cyan')
+    print(colored_ascii_art)
+
 if __name__ == "__main__":
+    print_colored_ascii_art()
     # Configurer les paramètres en ligne de commande
     parser = argparse.ArgumentParser(description="Afficher ou Créer une arborescence de Dossier en Une Seconde.")
     parser.add_argument("chemin_dossier", type=str, help="Chemin du dossier à explorer ou créer")
