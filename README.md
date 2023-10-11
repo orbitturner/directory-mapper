@@ -3,6 +3,10 @@
 
 💡 Unlock the power of directory management with Orbit Directory Mapper! View your file structures in ASCII, JSON, or YAML formats. 🌐 Effortlessly create directory trees using descriptive JSON files. Elevate your file organization game with ease. 🚀🌳 
 
+<p align="center"> 
+  <img src="./.assets/dirmap_cover.png" />
+</p>
+
 📜 **Table of Contents**
 ---------------------
 
