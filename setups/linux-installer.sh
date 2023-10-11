@@ -73,3 +73,5 @@ echo "✅ Repository cloned and alias added to the environment."
 echo "🎉 Successful installation in $installPath."
 
 echo "🚀 You can now use the dirmap command from your terminal 🚀"
+
+dirmap --help

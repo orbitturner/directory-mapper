@@ -82,3 +82,5 @@ Write-Host "✅ Repository cloned and alias added to the environment."
 Write-Host "🎉 Successful installation in $installPath. "
 
 Write-Host "🚀 You can now use the 'dirmap' command from your terminal 🚀"
+
+dirmap --help
