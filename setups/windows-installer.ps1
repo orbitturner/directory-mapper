@@ -21,14 +21,14 @@ if (Test-Path $installPath) {
 Write-Host "🛠 Vérification de l'installation de Python et Git"
 
 # Vérifier si Python est installé
-if (-not (Test-Path (Join-Path $env:ProgramFiles 'Python'))) {
-    Write-Host "❌ Python n'est pas installé. Veuillez installer Python avant de continuer."
+if (!(Get-Command python -ErrorAction SilentlyContinue)) {
+    Write-Host "❌ Python n'est pas installé. Veuillez installer Python avant de continuer." -ForegroundColor Red
     exit 1
 }
 
 # Vérifier si Git est installé
-if (-not (Test-Path (Join-Path $env:ProgramFiles 'Git'))) {
-    Write-Host "❌ Git n'est pas installé. Veuillez installer Git avant de continuer."
+if (!(Get-Command git -ErrorAction SilentlyContinue)) {
+    Write-Host "❌ Git n'est pas installé. Veuillez installer Git avant de continuer." -ForegroundColor Red
     exit 1
 }
 
