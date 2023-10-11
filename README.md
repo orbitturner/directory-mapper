@@ -21,11 +21,11 @@ Installation 📥
 
 ### Installation sur Windows
 ```powershell
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/install.ps1')
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1')
 ```
 ### Installation sur Linux
 ```shell
-wget -O - https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/install.sh | bash
+wget -O - https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.ps1 | bash
 ```
 
 
@@ -37,9 +37,8 @@ Après l'installation, vous pouvez utiliser l'alias `dirmap` sur la ligne de com
 Utilisation 🧑‍💻
 -----------------
 
-Vous pouvez utiliser le script pour visualiser la structure d'un dossier ou créer une arborescence à partir d'une description JSON.
+Vous pouvez utiliser le script pour visualiser la structure d'un dossier en ASCII, JSON ou YAML mais aussi créer une arborescence à partir d'une description JSON.
 
-Utilisez l'outil Orbit Directory Mapper pour explorer la structure d'un dossier ou créer une arborescence.
 
 ### Afficher la Structure d'un Dossier
 ```shell
@@ -52,7 +51,7 @@ dirmap chemin/du/dossier --ignore dossier1 dossier2 --regex "^test.*$"
 
 ### Créer une Arborescence à partir d'une Description JSON
 ```shell
-dirmap chemin/du/dossier --create --description chemin/vers/description.json --ignore dossier1 dossier2 --format json
+dirmap chemin/du/dossier --create --description chemin/vers/description.json --ignore dossier1 dossier2 
 ```
 *   `chemin/du/dossier` : Chemin du dossier à créer.
 *   `--create` : Mode création d'arborescence.
