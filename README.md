@@ -95,6 +95,9 @@ dirmap check-update
 
 
   
+🖼️ **Screenshots**
+-----------------
+See the [Assets Folder](./.assets) for more screens.
 
 🔄 **Updates**
 ---------------
