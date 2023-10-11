@@ -39,6 +39,7 @@ pip install loguru
 pip install pyyaml
 pip install termcolor
 pip install art
+pip install wonderwords
 
 
 echo "✅ Dépendances Python installées."

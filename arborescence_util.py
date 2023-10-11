@@ -1,6 +1,5 @@
 # arborescence_util.py
 import os
-import sys
 import json
 import re
 from loguru import logger

@@ -14,10 +14,24 @@ $installPath = "C:\Program Files\OrbitDirectoryMapper"
 
 # Vérifier si une ancienne installation existe
 if (Test-Path $installPath) {
-    Write-Host "❌ Une ancienne installation existe déjà. Veuillez désinstaller avant de continuer."
-    exit 1
-}
+    $reinstall = $null
+    while ($reinstall -ne 'Y' -and $reinstall -ne 'N') {
+        $reinstall = Read-Host "Program is already installed at $installPath. Do you want to reinstall? (Y/N)"
+    }
 
+    if ($reinstall -eq 'Y') {
+        # Supprimer le programme existant et son entrée dans l'environnement
+        Write-Host "🗑 Uninstalling existing program..."
+        Remove-Item -Recurse -Force $installPath
+
+        # Supprimer l'entrée dans l'environnement
+        $envPath = [System.Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
+        $newPath = $envPath -replace [regex]::Escape("$installPath;"), ''
+        [System.Environment]::SetEnvironmentVariable('Path', $newPath, [System.EnvironmentVariableTarget]::Machine)
+    } else {
+        return Write-Host "🚫 Installation aborted by user."
+    }
+}
 Write-Host "🛠 Vérification de l'installation de Python et Git"
 
 # Vérifier si Python est installé
@@ -41,6 +55,7 @@ pip install loguru
 pip install pyyaml
 pip install termcolor
 pip install art
+pip install wonderwords
 
 Write-Host "✅ Dépendances Python installées."
 
@@ -49,15 +64,22 @@ Write-Host "📥 Clonage du repository depuis GitHub"
 # Cloner le repository depuis GitHub
 git clone https://github.com/orbitturner/directory-mapper $installPath
 
-# Ajouter l'alias dans l'environnement
-$env:Path = $env:Path + ";" + $installPath
-[Environment]::SetEnvironmentVariable("Path", $env:Path, [System.EnvironmentVariableTarget]::Machine)
+# Crée un script batch pour exécuter l'application
+Write-Host "📝 Création du script d'exécution de l'application"
+Add-Content "$installPath\dirmap.bat" "@echo off"
+Add-Content "$installPath\dirmap.bat" "python `"$installPath\orbit_directory_mapper.py`" %*"
 
-# Ajouter l'alias dirmap
-$env:Path = $env:Path + ";" + $installPath
-[Environment]::SetEnvironmentVariable("Path", $env:Path, [System.EnvironmentVariableTarget]::Machine)
-[Environment]::SetEnvironmentVariable("dirmap", "$installPath\orbit_directory_mapper.py", [System.EnvironmentVariableTarget]::Machine)
+# Ajoute le répertoire des applications au PATH
+$newPath = [System.Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine) + ";$installPath"
+[Environment]::SetEnvironmentVariable("Path", $newPath, [EnvironmentVariableTarget]::Machine)
+
+# Exécute la commande refreshenv pour prendre en compte les changements dans l'environnement
+Write-Host "🔄 Refreshing the environment..."
+refreshenv
 
 Write-Host "✅ Repository cloné et alias ajouté à l'environnement."
 
-Write-Host "🎉 Installation réussie dans $installPath. L'alias dirmap a été ajouté à l'environnement."
+Write-Host "🎉 Installation réussie dans $installPath. "
+
+Write-Host "🚀 Vous pouvez maintenant utiliser la commande dirmap depuis votre terminal 🚀"
+

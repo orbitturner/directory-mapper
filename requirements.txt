@@ -1,0 +1,4 @@
+loguru
+wonderwords
+art
+termcolor
