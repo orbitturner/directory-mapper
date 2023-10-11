@@ -1,18 +1,18 @@
-# install.ps1
+# windows-installer.ps1
 
-Write-Host "🚀 Début de l'installation 🚀"
+Write-Host "🚀 Installation Start 🚀"
 
-# Teste les privilèges administratifs
+# Test administrative privileges
 $adminRights = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
-# Vérifie si l'utilisateur a les droits d'administrateur
+# Check if the user has administrator rights
 if (-not $adminRights) {
-    return Write-Host "❌ Please Bro RUN this script as an SUDO. Right-click the PowerShell icon and select 'Run as Administrator.' 😫😫 Are you Mad ?!"
+    return Write-Host "❌ Please, run this script as an administrator. Right-click the PowerShell icon and select 'Run as Administrator.' 😫😫 Are you Mad ?!"
 }
 
 $installPath = "C:\Program Files\OrbitDirectoryMapper"
 
-# Vérifier si une ancienne installation existe
+# Check if a previous installation exists
 if (Test-Path $installPath) {
     $reinstall = $null
     while ($reinstall -ne 'Y' -and $reinstall -ne 'N') {
@@ -20,11 +20,11 @@ if (Test-Path $installPath) {
     }
 
     if ($reinstall -eq 'Y') {
-        # Supprimer le programme existant et son entrée dans l'environnement
+        # Remove the existing program and its entry from the environment
         Write-Host "🗑 Uninstalling existing program..."
         Remove-Item -Recurse -Force $installPath
 
-        # Supprimer l'entrée dans l'environnement
+        # Remove entry from the environment
         $envPath = [System.Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
         $newPath = $envPath -replace [regex]::Escape("$installPath;"), ''
         [System.Environment]::SetEnvironmentVariable('Path', $newPath, [System.EnvironmentVariableTarget]::Machine)
@@ -32,54 +32,53 @@ if (Test-Path $installPath) {
         return Write-Host "🚫 Installation aborted by user."
     }
 }
-Write-Host "🛠 Vérification de l'installation de Python et Git"
+Write-Host "🛠 Checking installation of Python and Git"
 
-# Vérifier si Python est installé
+# Check if Python is installed
 if (!(Get-Command python -ErrorAction SilentlyContinue)) {
-    Write-Host "❌ Python n'est pas installé. Veuillez installer Python avant de continuer." -ForegroundColor Red
+    Write-Host "❌ Python is not installed. Please install Python before continuing." -ForegroundColor Red
     exit 1
 }
 
-# Vérifier si Git est installé
+# Check if Git is installed
 if (!(Get-Command git -ErrorAction SilentlyContinue)) {
-    Write-Host "❌ Git n'est pas installé. Veuillez installer Git avant de continuer." -ForegroundColor Red
+    Write-Host "❌ Git is not installed. Please install Git before continuing." -ForegroundColor Red
     exit 1
 }
 
-Write-Host "✅ Python et Git sont installés."
+Write-Host "✅ Python and Git are installed."
 
-Write-Host "📦 Installation des dépendances Python"
+Write-Host "📦 Installing Python dependencies"
 
-# Installer les dépendances Python
+# Install Python dependencies
 pip install loguru
 pip install pyyaml
 pip install termcolor
 pip install art
 pip install wonderwords
 
-Write-Host "✅ Dépendances Python installées."
+Write-Host "✅ Python dependencies installed."
 
-Write-Host "📥 Clonage du repository depuis GitHub"
+Write-Host "📥 Cloning the repository from GitHub"
 
-# Cloner le repository depuis GitHub
+# Clone the repository from GitHub
 git clone https://github.com/orbitturner/directory-mapper $installPath
 
-# Crée un script batch pour exécuter l'application
-Write-Host "📝 Création du script d'exécution de l'application"
+# Create a batch script to run the application
+Write-Host "📝 Creating the application execution script"
 Add-Content "$installPath\dirmap.bat" "@echo off"
 Add-Content "$installPath\dirmap.bat" "python `"$installPath\orbit_directory_mapper.py`" %*"
 
-# Ajoute le répertoire des applications au PATH
+# Add the applications directory to the PATH
 $newPath = [System.Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine) + ";$installPath"
 [Environment]::SetEnvironmentVariable("Path", $newPath, [EnvironmentVariableTarget]::Machine)
 
-# Exécute la commande refreshenv pour prendre en compte les changements dans l'environnement
+# Execute the refreshenv command to reflect changes in the environment
 Write-Host "🔄 Refreshing the environment..."
 refreshenv
 
-Write-Host "✅ Repository cloné et alias ajouté à l'environnement."
+Write-Host "✅ Repository cloned and alias added to the environment."
 
-Write-Host "🎉 Installation réussie dans $installPath. "
+Write-Host "🎉 Successful installation in $installPath. "
 
-Write-Host "🚀 Vous pouvez maintenant utiliser la commande dirmap depuis votre terminal 🚀"
-
+Write-Host "🚀 You can now use the 'dirmap' command from your terminal 🚀"

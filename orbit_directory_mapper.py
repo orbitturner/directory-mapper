@@ -1,56 +1,76 @@
-# arborescence.py
-import os
-from loguru import logger
+# orbit_directory_mapper.py
 import argparse
 import sys
-from art import text2art
+from loguru import logger
 from termcolor import colored
-from arborescence_util import dessiner_arborescence, creer_arborescence, afficher_arborescence_format
-
+from art import text2art
+from utils.arborescence_util import draw_directory_structure, create_directory, display_directory_format
+from helpers.update_checker import check_for_update
 
 def print_colored_ascii_art():
     text = "Orbit Directory Mapper"
     colored_ascii_art = colored(text2art(text), 'cyan')
     print(colored_ascii_art)
 
+def view_command(args):
+    logger.info(f"🌲 Operation Start 🌲")
+    logger.info(f"📂 Folder Structure: {args.folder_path}")
+
+    # Display the directory structure in the specified format
+    if args.format:
+        logger.info(f"📂 Displaying Directory Structure in {args.format.upper()} Format:\n")
+        display_directory_format(args.folder_path, args.format, ignore_folders=args.ignore, ignore_regex=args.regex)
+    else:   
+        draw_directory_structure(args.folder_path, ignore_folders=args.ignore, ignore_regex=args.regex)
+
+def create_command(args):
+    logger.info(f"🌲 Operation Start 🌲")
+
+    if args.description:
+        create_directory(args.description, args.folder_path, ignore_folders=args.ignore, ignore_regex=args.regex)
+    else:
+        logger.error("❌ JSON description is required in create mode.")
+
+def check_update_command(args):
+    check_for_update()
+
 if __name__ == "__main__":
+    # Welcome message
     print_colored_ascii_art()
-    # Configurer les paramètres en ligne de commande
-    parser = argparse.ArgumentParser(description="Afficher ou Créer une arborescence de Dossier en Une Seconde.")
-    parser.add_argument("chemin_dossier", type=str, help="Chemin du dossier à explorer ou créer")
-    parser.add_argument("--ignore", type=str, nargs="*", help="Noms des dossiers à ignorer")
-    parser.add_argument("--regex", type=str, help="Motif regex pour ignorer certains dossiers")
-    parser.add_argument("--format", choices=["json", "yaml"], help="Format de l'arborescence (JSON ou YAML)")
-    parser.add_argument("--create", action="store_true", help="Mode création d'arborescence")
-    parser.add_argument("--description", type=str, help="Chemin de la description JSON pour le mode création")
+    parser = argparse.ArgumentParser(description="Display or Create a Folder Structure in a Second.")
+    subparsers = parser.add_subparsers(title="Commands", dest="command", metavar="{view, create, check-update}", required=True)
+
+    # Parser for the view command
+    view_parser = subparsers.add_parser("view", help="Display the structure of a folder (default)")
+    view_parser.add_argument("folder_path", type=str, help="Path of the folder to explore or create")
+    view_parser.add_argument("--ignore", type=str, nargs="*", help="Names of folders to ignore")
+    view_parser.add_argument("--regex", type=str, help="Regex pattern to ignore certain folders")
+    view_parser.add_argument("--format", choices=["json", "yaml"], help="Format of the directory structure (JSON or YAML)")
+    view_parser.set_defaults(func=view_command)
+
+    # Parser for the create command
+    create_parser = subparsers.add_parser("create", help="Create a directory structure from a JSON description")
+    create_parser.add_argument("folder_path", type=str, help="Path of the folder to explore or create")
+    create_parser.add_argument("--ignore", type=str, nargs="*", help="Names of folders to ignore")
+    create_parser.add_argument("--regex", type=str, help="Regex pattern to ignore certain folders")
+    create_parser.add_argument("--description", type=str, help="Path of the JSON description for create mode", required=True)
+    create_parser.set_defaults(func=create_command)
+
+    # Parser for the check-update command
+    check_update_parser = subparsers.add_parser("check-update", help="Check for updates")
+    check_update_parser.set_defaults(func=check_update_command)
 
     args = parser.parse_args()
 
     logger.remove()
-    # Configurer les logs avec Loguru
-    logger.add("logs/structure_dossier.log", rotation="10 MB", level="DEBUG")
-    # Ajouter un autre gestionnaire pour la console, mais uniquement pour les niveaux INFO et supérieurs
+    # Configure logs with Loguru
+    logger.add("logs/dirmap_events.log", rotation="10 MB", level="DEBUG")
+    # Add another handler for the console, but only for INFO and higher levels
     logger.add(sys.stdout, level="INFO")
 
-    # Vérifier si le chemin existe
-    if os.path.exists(args.chemin_dossier):
-        logger.info("🌲 Début de l'opération 🌲")
-
-        # Mode "Show/Draw"
-        if not args.create:
-            logger.info(f"📂 Structure du dossier : {args.chemin_dossier}")
-            # Afficher l'arborescence dans le format spécifié
-            if args.format:
-                logger.info(f"📂 Affichage de l'arborescence dans le format {args.format.upper()} :\n")
-                afficher_arborescence_format(args.chemin_dossier, args.format, ignore_dossiers=args.ignore, ignore_regex=args.regex)
-            else:   
-                dessiner_arborescence(args.chemin_dossier, ignore_dossiers=args.ignore, ignore_regex=args.regex)
-
-        # Mode "Create"
-        else:
-            if args.description:
-                creer_arborescence(args.description, args.chemin_dossier, ignore_dossiers=args.ignore, ignore_regex=args.regex)
-            else:
-                logger.error("❌ La description JSON est requise en mode création.")
+    # Execute the function associated with the sub-command
+    if hasattr(args, 'func'):
+        args.func(args)
     else:
-        logger.error("❌ Le chemin spécifié n'existe pas.")
+        # If no sub-command is specified, execute the default command (view)
+        view_command(args)

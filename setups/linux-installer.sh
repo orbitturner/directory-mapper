@@ -1,64 +1,75 @@
 #!/bin/bash
 
-echo "🚀 Début de l'installation 🚀"
+echo "🚀 Installation Start 🚀"
 
-# Vérifie si le script est exécuté en tant que root (administrateur)
+# Check for administrative privileges
 if [ "$EUID" -ne 0 ]; then
-    echo "❌ Please run this script as root (administrator). Use 'sudo ./linux-installer.sh'. 😫 Are you Mad ?!"
+    echo "❌ Please run this script as an administrator (use sudo)." >&2
     exit 1
 fi
 
-installPath="/usr/local/bin/OrbitDirectoryMapper"
+installPath="/usr/local/OrbitDirectoryMapper"
 
-# Vérifier si une ancienne installation existe
+# Check if a previous installation exists
 if [ -d "$installPath" ]; then
-    echo "❌ Une ancienne installation existe déjà. Veuillez désinstaller avant de continuer."
-    exit 1
+    read -p "The program is already installed at $installPath. Do you want to reinstall? (Y/N): " reinstall
+
+    if [ "$reinstall" == "Y" ]; then
+        # Uninstall the existing program and remove its entry from the environment
+        echo "🗑 Uninstalling the existing program..."
+        rm -rf "$installPath"
+
+        # Remove entry from the environment
+        export PATH=$(echo $PATH | sed -e "s|$installPath;||")
+    else
+        echo "🚫 Installation aborted by the user."
+        exit 1
+    fi
 fi
 
-echo "🛠 Vérification de l'installation de Python et Git"
+echo "🛠 Checking installation of Python and Git"
 
-# Vérifier si Python est installé
+# Check if Python is installed
 if ! command -v python &> /dev/null; then
-    echo "❌ Python n'est pas installé. Veuillez installer Python avant de continuer."
+    echo "❌ Python is not installed. Please install Python before continuing." >&2
     exit 1
 fi
 
-# Vérifier si Git est installé
+# Check if Git is installed
 if ! command -v git &> /dev/null; then
-    echo "❌ Git n'est pas installé. Veuillez installer Git avant de continuer."
+    echo "❌ Git is not installed. Please install Git before continuing." >&2
     exit 1
 fi
 
-echo "✅ Python et Git sont installés."
+echo "✅ Python and Git are installed."
 
-echo "📦 Installation des dépendances Python"
+echo "📦 Installing Python dependencies"
 
-# Installer les dépendances Python
+# Install Python dependencies
 pip install loguru
 pip install pyyaml
 pip install termcolor
 pip install art
 pip install wonderwords
+pip install requests
 
+echo "✅ Python dependencies installed."
 
-echo "✅ Dépendances Python installées."
+echo "📥 Cloning the repository from GitHub"
 
-echo "📥 Clonage du repository depuis GitHub"
+# Clone the repository from GitHub
+git clone https://github.com/orbitturner/directory-mapper "$installPath"
 
-# Cloner le repository depuis GitHub
-git clone https://github.com/orbitturner/directory-mapper $installPath
+# Create a script to run the application
+echo "📝 Creating the application execution script"
+echo -e "#!/bin/bash\npython \"$installPath/orbit_directory_mapper.py\" \"$@\"" > "$installPath/dirmap"
+chmod +x "$installPath/dirmap"
 
-echo "✅ Repository cloné."
+# Add the applications directory to the PATH
+export PATH=$PATH:$installPath
 
-echo "📝 Ajout des alias dans l'environnement"
+echo "✅ Repository cloned and alias added to the environment."
 
-# Ajouter l'alias dirmap
-echo "export PATH=\$PATH:$installPath" >> ~/.bashrc
-echo "alias dirmap=\"$installPath/orbit_directory_mapper.py\"" >> ~/.bashrc
+echo "🎉 Successful installation in $installPath."
 
-source ~/.bashrc
-
-echo "✅ Alias ajouté à l'environnement."
-
-echo "🎉 Installation réussie dans $installPath. L'alias dirmap a été ajouté à l'environnement."
+echo "🚀 You can now use the dirmap command from your terminal 🚀"

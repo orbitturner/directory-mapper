@@ -1,82 +1,108 @@
-Orbit Directory Mapper 🌌
+🚀 **Orbit Directory Mapper**
 =========================
 
-Bienvenue dans Orbit Directory Mapper, votre outil de visualisation et de création d'arborescences de répertoires.
+💡 Unlock the power of directory management with Orbit Directory Mapper! View your file structures in ASCII, JSON, or YAML formats. 🌐 Effortlessly create directory trees using descriptive JSON files. Elevate your file organization game with ease. 🚀🌳 
 
-Fonctionnalités 💡
-------------------
+📜 **Table of Contents**
+---------------------
 
-*   Visualisation en ASCII, JSON ou YAML de la structure d'un dossier.
-*   Création d'arborescences à partir de descriptions JSON.
-*   Export & Compression de la structure d'un dossier au format JSON ou YAML.
+*   [Features](#features)
+*   [Prerequisites](#prerequisites)
+*   [Installation](#installation)
+    *   [On Windows](#on-windows)
+    *   [On Linux](#on-linux)
+*   [Usage](#usage)
+    *   [View Command (Default)](#view-command-default)
+    *   [Create Command](#create-command)
+    *   [Check-Update Command](#check-update-command)
+*   [Updates](#updates)
+*   [Contributions](#contributions)
+*   [License](#license)
+---------------------
 
-Prérequis 🛠
+🚀 **Features**
+-----------
+
+*   Visualization in ASCII, JSON, or YAML of a folder's structure.
+*   Creation of tree structures from JSON descriptions.
+*   Coming soon: Export & Compression of a folder's structure in JSON or YAML format.
+*   Installation in one command.
+*   Lightning-fast.
+*   Easy to customize.
+
+
+🛠 **Prerequisites**
 ------------
 
-*   **Python** installé sur votre machine.
-*   **Git** installé sur votre machine.
+*   **Python** installed on your machine.
+*   **Git** installed on your machine.
 
-Installation 📥
+
+📥 **Installation**
 ---------------
 
-### Installation sur Windows
-```powershell
+### 🚀 **Installation on Windows**
+```powershell	
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1')
 ```
-### Installation sur Linux
-```shell
+
+### 🐧 **Installation on Linux**
+```bash
 wget -O - https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.ps1 | bash
 ```
+  
 
-
-Démarrage 🚀
-------------
-
-Après l'installation, vous pouvez utiliser l'alias `dirmap` sur la ligne de commande.
-
-Utilisation 🧑‍💻
+🧑‍💻 **Usage**
 -----------------
 
-Vous pouvez utiliser le script pour visualiser la structure d'un dossier en ASCII, JSON ou YAML mais aussi créer une arborescence à partir d'une description JSON.
+### View Command (Default)
 
+This command is used to visualize the directory structure in ASCII art.
 
-### Afficher la Structure d'un Dossier
 ```shell
-dirmap chemin/du/dossier --ignore dossier1 dossier2 --regex "^test.*$"
+dirmap view \[--ignore <folder1 folder2>\] \[--regex <regex\_pattern>\] \[--format <json/yaml>\] <folder\_path>
 ```
-*   `chemin/du/dossier` : Chemin du dossier à explorer.
-*   `--ignore dossier1 dossier2` : Noms des dossiers à ignorer.
-*   `--regex "^test.*$"` : Motif regex pour ignorer certains dossiers.
-*   `--format "json" or "yaml` _(optional)_: Format d'affichage de l'arborescence (JSON ou YAML). If Not set ASCII will be used.
 
-### Créer une Arborescence à partir d'une Description JSON
+*   `folder_path`: Path of the directory to explore.
+*   `--ignore` _(optional)_: Specify folders to ignore.
+*   `--regex` _(optional)_: Use a regex pattern to ignore certain folders.
+*   `--format` _(optional)_: Display the directory structure in JSON or YAML format.
+
+### Create Command
+
+Use this command to create a directory structure based on a description file.
+
 ```shell
-dirmap chemin/du/dossier --create --description chemin/vers/description.json --ignore dossier1 dossier2 
+dirmap create --description <description\_file.json> \[--ignore <folder1 folder2>\] \[--regex <regex\_pattern>\] <folder\_path>
 ```
-*   `chemin/du/dossier` : Chemin du dossier à créer.
-*   `--create` : Mode création d'arborescence.
-*   `--description chemin/vers/description.json` : Chemin de la description JSON pour le mode création.
-*   `--ignore dossier1 dossier2` : Noms des dossiers à ignorer.
+
+*   `folder_path`: Path of the directory where the structure will be created.
+*   `--description`: Path of the JSON description file for the directory structure.
+*   `--ignore` _(optional)_: Specify folders to ignore.
+*   `--regex` _(optional)_: Use a regex pattern to ignore certain folders.
+
+### Check-Update Command
+
+This command checks for updates from the remote repository and provides instructions for the update.
+
+```shell
+dirmap check-update
+```
 
 
+  
 
+🔄 **Updates**
+---------------
 
-Documentation 📖
+Follow the [project's updates](./versions-history.json).
+
+🤝 **Contributions**
 ----------------
 
-Consultez la documentation complète sur l'utilisation de l'outil dans le fichier `docs/README.md`.
+Contributions are welcome! Check the [contribution guide](CONTRIBUTING.md) to get started.
 
-Contribuer 🌟
--------------
-
-Si vous souhaitez contribuer à ce projet, consultez le guide de contribution dans le fichier `CONTRIBUTING.md`.
-
-Licence 📜
+📄 **License**
 ----------
 
-Ce projet est sous licence MIT. Consultez le fichier `LICENCE` pour plus d'informations.
-
-Contact 📞
-----------
-
-Pour toute question ou préoccupation, n'hésitez pas à me contacter à .
+This project is under the MIT license. Check the [LICENSE](LICENSE) file for more details.

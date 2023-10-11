@@ -1,7 +1,9 @@
 import json
+import sys
 from wonderwords import RandomWord
 from datetime import datetime
 from subprocess import check_output, run
+from loguru import logger
 
 def get_version_type():
     print("🚀 Quel type de version voulez-vous déployer ?")
@@ -57,47 +59,52 @@ def update_version_history(version, commit_message):
         version_history_file.truncate()
 
 def push_to_git(branch, commit_message):
-    print("📡 Commiting files to Git")
+    logger.info("📡 Committing files to Git")
     run(["git", "add", "."], check=True)
     run(["git", "commit", "-m", commit_message], check=True)
-    print(f"🚀 Pushing to Git on branch {branch}")
+    logger.info(f"🚀 Pushing to Git on branch {branch}")
     run(["git", "push", "origin", branch], check=True)
-    print("✅ Push to Git successful")
-
+    logger.info("✅ Push to Git successful")
 
 def main():
-    print("🌟 Début du déploiement 🌟")
+    logger.remove()
+    # Configure logs with Loguru
+    logger.add("logs/dirmap_events.log", rotation="10 MB", level="DEBUG")
+    # Add another handler for the console, but only for INFO and higher levels
+    logger.add(sys.stdout, level="INFO")
 
-     # Récupérer la version actuelle depuis le manifest.json
+    logger.info("🌟 Deployment Start 🌟")
+
+    # Get the current version from manifest.json
     with open("manifest.json") as manifest_file:
         manifest = json.load(manifest_file)
         current_version = manifest["version"]
-        deploy_branch = manifest.get("deploy-branch", "main")  # Si la clé n'est pas spécifiée, utiliser "main"
-        print(f"Version actuelle dans manifest.json : {current_version}")
-        print(f"Branche de déploiement : {deploy_branch}")
+        deploy_branch = manifest.get("deploy-branch", "main")  # If the key is not specified, use "main"
+        logger.info(f"Current version in manifest.json: {current_version}")
+        logger.info(f"Deployment branch: {deploy_branch}")
 
     version_type = get_version_type()
-    print(f"Type de version sélectionné : {version_type}")
+    logger.info(f"Selected version type: {version_type}")
 
-    # Incrémenter la version
+    # Increment the version
     new_version = increment_version(current_version, version_type)
-    print(f"🔼 Nouvelle version générée : {new_version}")
+    logger.info(f"🔼 New version generated: {new_version}")
 
     commit_message = get_last_commit_message()
-    print(f"📝 Message du dernier commit : {commit_message}")
+    logger.info(f"📝 Last commit message: {commit_message}")
 
-    # Mettre à jour la version dans manifest.json
+    # Update the version in manifest.json
     update_manifest_version(new_version)
-    print("✅ Version mise à jour dans manifest.json")
+    logger.info("✅ Version updated in manifest.json")
 
-    # Mettre à jour version-history.json
+    # Update version-history.json
     update_version_history(new_version, commit_message)
-    print("✅ Version ajoutée à version-history.json")
+    logger.info("✅ Version added to version-history.json")
 
     # Push to Git
     push_to_git(deploy_branch, commit_message)
 
-    print("🎉 Déploiement réussi ! 🎉")
+    logger.info("🎉 Deployment successful! 🎉")
 
 if __name__ == "__main__":
     main()

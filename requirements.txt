@@ -2,3 +2,4 @@ loguru
 wonderwords
 art
 termcolor
+requests
