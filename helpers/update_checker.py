@@ -9,10 +9,11 @@ EMOJI_ROCKET = "🚀"
 EMOJI_WARNING = "⚠️"
 
 # Local manifest.json path
-LOCAL_MANIFEST_PATH = "manifest.json"
+LOCAL_MANIFEST_PATH = "C:\\Program Files\\OrbitDirectoryMapper\\manifest.json" if platform.system() == "Windows" else "/usr/local/OrbitDirectoryMapper/manifest.json"
 
 # Remote manifest.json URL
 REMOTE_MANIFEST_URL = "https://raw.githubusercontent.com/orbitturner/directory-mapper/main/manifest.json"
+
 
 def check_for_update():
     print(f"{EMOJI_ROCKET} Checking for updates...")
