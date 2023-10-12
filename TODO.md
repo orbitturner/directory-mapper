@@ -16,9 +16,18 @@
 
 ## Low Priority
 
-- [ ] Add new feature to dashboard (due: 2022-04-01)
-- [ ] Update styling of landing page (due: 2022-04-15)
+- [ ] Rebuild CLI Using RICH Library
 
 ## Completed
 
 - [x] Fix formatting issue in email templates (completed: 2022-01-10)
+- [x] Write documentation (due: 2023-10-12)
+
+
+## Notes 
+
+1. Choose between these two palettes for the Next TreePrinter Version:
+-> https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
+-> https://coolors.co/palette/0081a7-00afb9-fdfcdc-fed9b7-f07167
+
+2. Go for Rich Tree Printer or Build from Scratch ?

@@ -7,11 +7,18 @@ from art import text2art
 from utils.arborescence_util import draw_directory_structure, create_directory, display_directory_format
 from helpers.update_checker import check_for_update
 
+# ========================
+# UTILS
+# ========================
 def print_colored_ascii_art():
     text = "Orbit Directory Mapper"
     colored_ascii_art = colored(text2art(text), 'cyan')
     print(colored_ascii_art)
+# ========================
 
+# ========================
+# COMMANDS
+# ========================
 def view_command(args):
     logger.info(f"🌲 Operation Start 🌲")
     logger.info(f"📂 Folder Structure: {args.folder_path}")
@@ -33,7 +40,11 @@ def create_command(args):
 
 def check_update_command(args):
     check_for_update()
+# ========================
 
+# ========================
+# MAIN
+# ========================
 if __name__ == "__main__":
     # Welcome message
     print_colored_ascii_art()
@@ -53,7 +64,7 @@ if __name__ == "__main__":
     create_parser.add_argument("folder_path", type=str, help="Path of the folder to explore or create")
     create_parser.add_argument("--ignore", type=str, nargs="*", help="Names of folders to ignore")
     create_parser.add_argument("--regex", type=str, help="Regex pattern to ignore certain folders")
-    create_parser.add_argument("--description", type=str, help="Path of the JSON description for create mode", required=True)
+    create_parser.add_argument("--description", type=str, help="JSON Content or Path of the JSON description file for create mode", required=True)
     create_parser.set_defaults(func=create_command)
 
     # Parser for the check-update command
@@ -73,4 +84,4 @@ if __name__ == "__main__":
         args.func(args)
     else:
         # If no sub-command is specified, execute the default command (view)
-        view_command(args)
+        check_for_update(args)

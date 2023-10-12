@@ -95,10 +95,19 @@ def generate_directory_yaml(folder, ignore_folders=None, ignore_regex=None):
 
 def create_directory(description_json, folder_path, ignore_folders=None, ignore_regex=None):
     try:
-        # Load the JSON description
-        with open(description_json, 'r') as file:
-            description = json.load(file)
-            logger.debug(f"📂 Description to Create: {description}")
+        # Check if description_json is a path or a dictionary
+        if isinstance(description_json, str):
+            logger.info(f"📂 Opening the JSON description: {description_json}")
+            # Load the JSON description
+            with open(description_json, 'r') as file:
+                description = json.load(file)
+        elif isinstance(description_json, dict):
+            # If description_json is already a dictionary, use it directly
+            description = description_json
+        else:
+            raise ValueError("Invalid type for description_json. Should be a path (str) or a dictionary.")
+        
+        logger.debug(f"📂 Description to Create: {description}")
 
         # Create the directory
         for name, content in description.items():
@@ -116,6 +125,7 @@ def create_directory(description_json, folder_path, ignore_folders=None, ignore_
                 # If the value is a dictionary, recursively create the folder
                 os.makedirs(element_path, exist_ok=True)
                 logger.info(f"📂 Folder created: {element_path}")
+                logger.debug(f"📂 Name: {name}, Content: {content}")
                 create_directory(description[name], element_path, ignore_folders, ignore_regex)
             elif content == "File":
                 # If the value is "File", create the file
