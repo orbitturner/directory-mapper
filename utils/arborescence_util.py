@@ -4,38 +4,16 @@ import json
 import re
 from loguru import logger
 import yaml
+from rich import print
+from utils.orbit_tree_builder import dir_tree_builder
 
 file_identifier = "File"
 
 
 def draw_directory_structure(folder, prefix="", ignore_folders=None, ignore_regex=None):
-    # Get the list of items in the folder
-    elements = os.listdir(folder)
-
-    # Iterate through the items
-    for i, element in enumerate(elements):
-        full_path = os.path.join(folder, element)
-        is_last = i == len(elements) - 1
-
-        # Ignore specified folders
-        if ignore_folders and element in ignore_folders:
-            continue
-
-        # Ignore folders matching the regex pattern
-        if ignore_regex and re.match(ignore_regex, element):
-            continue
-
-        # Display the prefix
-        if is_last:
-            print(prefix + "└── " + element)
-        else:
-            print(prefix + "├── " + element)
-
-        # If the item is a folder, recursively display its contents
-        if os.path.isdir(full_path):
-            new_prefix = prefix + ("    " if is_last else "│   ")
-            draw_directory_structure(full_path, new_prefix, ignore_folders, ignore_regex)
-
+    """Draw the directory structure with a tree."""
+    tree = dir_tree_builder(folder, None, ignore_folders, ignore_regex)
+    print(tree) 
 
 def display_directory_format(folder_path, format, ignore_folders=None, ignore_regex=None):
     if format == "json":

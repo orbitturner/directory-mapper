@@ -1,11 +1,7 @@
-"""
-Demonstrates how to display a tree of files / directories with the Tree renderable.
-Work on Progress for Orbit Directory Mapper v2.0.0
-"""
-
 import os
 import pathlib
 import sys
+import re
 
 from rich import print
 from rich.filesize import decimal
@@ -13,9 +9,12 @@ from rich.markup import escape
 from rich.text import Text
 from rich.tree import Tree
 
-
-def walk_directory(directory: pathlib.Path, tree: Tree) -> None:
+def dir_tree_builder(directory: pathlib.Path, tree: Tree = None, ignore_folders=None, ignore_regex=None) -> None:
     """Recursively build a Tree with directory contents."""
+    tree = Tree(
+        f":open_file_folder: [link file://{directory}]{directory}",
+        guide_style="bold bright_blue",
+    ) if tree is None else tree
     # Sort dirs first then by filename
     paths = sorted(
         pathlib.Path(directory).iterdir(),
@@ -25,6 +24,13 @@ def walk_directory(directory: pathlib.Path, tree: Tree) -> None:
         # Remove hidden files
         if path.name.startswith("."):
             continue
+
+        # Check if the current folder should be ignored
+        if ignore_folders and path.name in ignore_folders:
+            continue
+        if ignore_regex and re.match(ignore_regex, path.name):
+            continue
+
         if path.is_dir():
             style = "dim" if path.name.startswith("__") else ""
             branch = tree.add(
@@ -32,7 +38,7 @@ def walk_directory(directory: pathlib.Path, tree: Tree) -> None:
                 style=style,
                 guide_style=style,
             )
-            walk_directory(path, branch)
+            dir_tree_builder(path, branch, ignore_folders, ignore_regex)
         else:
             text_filename = Text(path.name, "yellow")
             text_filename.highlight_regex(r"\..*$", "bold red")
@@ -41,16 +47,4 @@ def walk_directory(directory: pathlib.Path, tree: Tree) -> None:
             text_filename.append(f" ({decimal(file_size)})", "blue")
             icon = "🐍 " if path.suffix == ".py" else "📄 "
             tree.add(Text(icon) + text_filename)
-
-
-try:
-    directory = os.path.abspath(sys.argv[1])
-except IndexError:
-    print("[b]Usage:[/] python tree.py <DIRECTORY>")
-else:
-    tree = Tree(
-        f":open_file_folder: [link file://{directory}]{directory}",
-        guide_style="bold bright_blue",
-    )
-    walk_directory(pathlib.Path(directory), tree)
-    print(tree)
+    return tree
