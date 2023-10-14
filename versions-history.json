@@ -22,5 +22,11 @@
         "date": "2023-10-12",
         "description": "feat(DIRECTORY-MAPPER): :sparkles: Changed & Improved Create Directory Function\n\n\ud83d\udd28 Further improvements to the create_directory function to handle different types of input, either a JSON file path or a dictionary directly.",
         "name": "raspberry-kaput"
+    },
+    {
+        "version": "1.3.0",
+        "date": "2023-10-14",
+        "description": "feat: \ud83d\ude80 Integrate Settings Manager and Menu\n\n- \u2728 Added a comprehensive Settings Manager (`settings_manager.py`) for reading, updating, and resetting settings in `settings.json`.\n- \ud83d\udd8c\ufe0f Created an interactive Settings Menu (`settings_menu.py`) using `npyscreen` for users to edit and reset various tree builder parameters.\n- \ud83d\udd04 Updated the `dir_tree_builder` function in `orbit_tree_builder.py` to dynamically fetch styling parameters from the Settings Manager.\n- \ud83d\udcdd Adjusted the structure of the `settings.json` file to include default values for tree builder parameters.\n\nrefactor: \ud83d\udee0\ufe0f Refactor Settings JSON Handling\n\n- \ud83d\udd04 Refactored the `SettingsForm` class in the Settings Menu to correctly handle attribute assignments, eliminating an `AttributeError`.\n- \ud83c\udf10 Improved the structure and readability of the code, added logs, emojis, and meaningful comments.",
+        "name": "schnitzel-scintillating"
     }
 ]
