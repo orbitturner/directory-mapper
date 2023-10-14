@@ -1,12 +1,11 @@
 {
     "tree_builder": {
-        "folder_color": "magenta",
-        "guide_style": "bold bright_blue",
-        "file_color": "yellow",
-        "highlight_regex_color": "bold red",
-        "link_style": "link file://{}",
-        "size_color": "blue",
-        "python_icon": "🐍 ",
+        "guide_style": "bold #3a86ff",
+        "folder_color": "#ff006e",
+        "file_color": "#8338ec",
+        "extension_color": "bold #ffbe0b",
+        "file_size_color": "#fb5607",
+        "python_files_icon": "🐍 ",
         "file_icon": "📄 ",
         "folder_icon": "📁 "
     }

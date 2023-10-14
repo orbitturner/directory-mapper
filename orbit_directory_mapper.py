@@ -6,6 +6,7 @@ from termcolor import colored
 from art import text2art
 from utils.arborescence_util import draw_directory_structure, create_directory, display_directory_format
 from helpers.update_checker import check_for_update
+from utils.settings_menu import edit_settings_menu
 
 # ========================
 # UTILS
@@ -40,6 +41,11 @@ def create_command(args):
 
 def check_update_command(args):
     check_for_update()
+
+def settings_menu_command(args):
+    from utils.settings_menu import Settings
+    settings_manager = Settings()
+    edit_settings_menu(settings_manager)
 # ========================
 
 # ========================
@@ -49,7 +55,7 @@ if __name__ == "__main__":
     # Welcome message
     print_colored_ascii_art()
     parser = argparse.ArgumentParser(description="Display or Create a Folder Structure in a Second.")
-    subparsers = parser.add_subparsers(title="Commands", dest="command", metavar="{view, create, check-update}", required=True)
+    subparsers = parser.add_subparsers(title="Commands", dest="command", metavar="{view, create, check-update, settings}", required=True)
 
     # Parser for the view command
     view_parser = subparsers.add_parser("view", help="Display the structure of a folder (default)")
@@ -70,6 +76,10 @@ if __name__ == "__main__":
     # Parser for the check-update command
     check_update_parser = subparsers.add_parser("check-update", help="Check for updates")
     check_update_parser.set_defaults(func=check_update_command)
+
+    # Parser for the settings command
+    settings_menu_parser = subparsers.add_parser("settings", help="Settings Menu")
+    settings_menu_parser.set_defaults(func=settings_menu_command)
 
     args = parser.parse_args()
 

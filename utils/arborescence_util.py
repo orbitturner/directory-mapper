@@ -10,10 +10,19 @@ from utils.orbit_tree_builder import dir_tree_builder
 file_identifier = "File"
 
 
+import time
+
 def draw_directory_structure(folder, prefix="", ignore_folders=None, ignore_regex=None):
     """Draw the directory structure with a tree."""
-    tree = dir_tree_builder(folder, None, ignore_folders, ignore_regex)
-    print(tree) 
+    start_time = time.time()
+
+    print(dir_tree_builder(folder, None, ignore_folders, ignore_regex))
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print()
+    logger.info(f"✅ Directory structure successfully drawn in {elapsed_time} seconds.")
+
 
 def display_directory_format(folder_path, format, ignore_folders=None, ignore_regex=None):
     if format == "json":

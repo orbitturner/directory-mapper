@@ -8,8 +8,12 @@ import requests
 EMOJI_ROCKET = "🚀"
 EMOJI_WARNING = "⚠️"
 
+# Get the directory of the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
 # Local manifest.json path
-LOCAL_MANIFEST_PATH = "C:\\Program Files\\OrbitDirectoryMapper\\manifest.json" if platform.system() == "Windows" else "/usr/local/OrbitDirectoryMapper/manifest.json"
+LOCAL_MANIFEST_PATH = os.path.join(current_dir,'..', 'manifest.json')
+
 
 # Remote manifest.json URL
 REMOTE_MANIFEST_URL = "https://raw.githubusercontent.com/orbitturner/directory-mapper/main/manifest.json"
