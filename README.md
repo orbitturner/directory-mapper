@@ -47,12 +47,12 @@
 
 ### 🚀 **Installation on Windows**
 ```powershell	
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1')
+Set-ExecutionPolicy RemoteSigned; Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1')
 ```
 
 ### 🐧 **Installation on Linux**
 ```bash
-wget -O - https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.ps1 | bash
+wget -O - https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh | bash
 ```
   
 

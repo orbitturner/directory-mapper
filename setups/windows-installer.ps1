@@ -51,13 +51,13 @@ Write-Host "✅ Python and Git are installed."
 Write-Host "📦 Installing Python dependencies"
 
 # Install Python dependencies
-pip install loguru
-pip install pyyaml
-pip install termcolor
-pip install art
-pip install wonderwords
-pip install requests
-pip install rich
+python -m pip install loguru
+python -m pip install pyyaml
+python -m pip install termcolor
+python -m pip install art
+python -m pip install wonderwords
+python -m pip install requests
+python -m pip install rich
 
 Write-Host "✅ Python dependencies installed."
 
@@ -69,7 +69,7 @@ git clone https://github.com/orbitturner/directory-mapper $installPath
 # Create a batch script to run the application
 Write-Host "📝 Creating the application execution script"
 Add-Content "$installPath\dirmap.bat" "@echo off"
-Add-Content "$installPath\dirmap.bat" "python `"$installPath\orbit_directory_mapper.py`" %*"
+Add-Content "$installPath\dirmap.bat" "python `"$installPath\orbit_directory_mapper.py`" `%`*"
 
 # Add the applications directory to the PATH
 $newPath = [System.Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine) + ";$installPath"
