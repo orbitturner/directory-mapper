@@ -77,18 +77,23 @@ git clone https://github.com/orbitturner/directory-mapper "$installPath"
 
 # Create a script to run the application
 echo "📝 Creating the application execution script"
-echo -e "#!/bin/bash\npython \"$installPath/orbit_directory_mapper.py\" \$@" > "$installPath/dirmap"
+echo -e "#!/bin/bash\npython \"$installPath/orbit_directory_mapper.py\" \"\$@\"" > "$installPath/dirmap"
 chmod +x "$installPath/dirmap"
 
 # Detect the user's shell
 detect_shell
 
 # Add the applications directory to the appropriate init file
-echo "export PATH=\$PATH:$installPath" >> "$HOME/$INIT_FILE"
+Write-Host " Making The App Global..."
+# echo "export PATH=\$PATH:$installPath" >> "$HOME/$INIT_FILE"
+ln -s $installPath/dirmap /usr/local/bin/dirmap
 
 echo "✅ Repository cloned and alias added to the $SHELL_NAME initialization file."
 
 echo "🎉 Successful installation in $installPath."
+
+# Write-Host "🔄 Refreshing the Environment & Shell..."
+# source "$HOME/$INIT_FILE"
 
 echo "🚀 You can now use the dirmap command from your terminal 🚀"
 
