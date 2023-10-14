@@ -52,6 +52,8 @@ pip install termcolor
 pip install art
 pip install wonderwords
 pip install requests
+pip install rich
+
 
 echo "✅ Python dependencies installed."
 

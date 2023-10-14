@@ -56,6 +56,8 @@ pip install pyyaml
 pip install termcolor
 pip install art
 pip install wonderwords
+pip install requests
+pip install rich
 
 Write-Host "✅ Python dependencies installed."
 

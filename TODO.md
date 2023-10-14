@@ -1,8 +1,8 @@
 # TODO
 
 ## High Priority
-
-- [ ] Add new TreeViewer Features (FileSize, Rights, Owner, Group, Last Modified, etc.)
+- [ ] Write documentation for Devs
+- [x] Add new TreeViewer Features (FileSize, Rights, Owner, Group, Last Modified, etc.)
 
 ## Medium Priority
 
@@ -19,7 +19,6 @@
 ## Completed
 
 - [x] Fix formatting issue in email templates (completed: 2022-01-10)
-- [x] Write documentation (due: 2023-10-12)
 - [x] i8n English as Base Language (due: 2023-10-21)
 
 
