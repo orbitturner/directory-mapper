@@ -39,6 +39,7 @@
 ------------
 
 *   **Python** installed on your machine.
+*   **Pip** installed on your machine.
 *   **Git** installed on your machine.
 
 

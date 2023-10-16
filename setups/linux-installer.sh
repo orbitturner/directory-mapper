@@ -44,7 +44,7 @@ fi
 echo "🛠 Checking installation of Python and Git"
 
 # Check if Python is installed
-if ! command -v python &> /dev/null; then
+if ! command -v python3 &> /dev/null; then
     echo "❌ Python is not installed. Please install Python before continuing." >&2
     exit 1
 fi
@@ -60,13 +60,13 @@ echo "✅ Python and Git are installed."
 echo "📦 Installing Python dependencies"
 
 # Install Python dependencies
-pip install loguru
-pip install pyyaml
-pip install termcolor
-pip install art
-pip install wonderwords
-pip install requests
-pip install rich
+python3 -m pip install loguru
+python3 -m pip install pyyaml
+python3 -m pip install termcolor
+python3 -m pip install art
+python3 -m pip install wonderwords
+python3 -m pip install requests
+python3 -m pip install rich
 
 echo "✅ Python dependencies installed."
 
