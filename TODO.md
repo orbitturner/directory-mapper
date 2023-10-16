@@ -1,6 +1,7 @@
 # TODO
 
 ## High Priority
+- [ ] Error Handling
 - [ ] Write documentation for Devs
 - [x] Add new TreeViewer Features (FileSize, Rights, Owner, Group, Last Modified, etc.)
 
