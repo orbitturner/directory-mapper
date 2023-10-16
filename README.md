@@ -52,11 +52,15 @@ Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubuserconte
 
 ```
 
+> **Note:** For updates, simply run the same command again.
+
 ### 🐧 **Installation on Linux**
 ```bash
-wget -O - https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh | bash
+wget https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh && bash linux-installer.sh
+
 ```
-  
+For updates, simply run the same command again.
+
 
 🧑‍💻 **Usage**
 -----------------

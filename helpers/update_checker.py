@@ -61,9 +61,9 @@ def get_install_command():
     os_name = platform.system()
 
     if os_name == "Windows":
-        return "Set-ExecutionPolicy RemoteSigned; Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1')"
+        return "Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1' | Invoke-Expression"
     elif os_name == "Linux":
-        return "wget -O - https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.ps1 | bash"
+        return "wget https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh && bash linux-installer.sh"
     else:
         return f"The operating system {os_name} is not supported."
 
