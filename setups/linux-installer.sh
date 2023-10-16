@@ -9,6 +9,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 installPath="/usr/local/OrbitDirectoryMapper"
+binApp="/usr/local/bin/dirmap"
 
 # Function to detect the user's shell
 detect_shell() {
@@ -26,12 +27,15 @@ detect_shell() {
 
 # Check if a previous installation exists
 if [ -d "$installPath" ]; then
-    read -p "The program is already installed at $installPath. Do you want to reinstall? (Y/N): " reinstall
+    # read -p "The program is already installed at $installPath. Do you want to reinstall? (Y/N): " reinstall
+    echo "The program is already installed at $installPath. Do you want to reinstall? (Y/N): "
+    read reinstall
 
     if [ "$reinstall" == "Y" ]; then
         # Uninstall the existing program and remove its entry from the environment
         echo "🗑 Uninstalling the existing program..."
         rm -rf "$installPath"
+        rm -rf "$binApp"
 
         # Remove entry from the environment
         export PATH=$(echo $PATH | sed -e "s|$installPath;||")
@@ -85,7 +89,7 @@ detect_shell
 
 # Making the app launcher globally available
 echo "📝 Adding the application launcher Globally"
-ln -s $installPath/dirmap /usr/local/bin/dirmap
+ln -s $installPath/dirmap $binApp
 
 echo "✅ Repository cloned and alias added to the $SHELL_NAME initialization file."
 
