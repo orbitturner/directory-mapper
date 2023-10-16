@@ -47,7 +47,8 @@
 
 ### 🚀 **Installation on Windows**
 ```powershell	
-Set-ExecutionPolicy RemoteSigned; Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1')
+Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1' | Invoke-Expression
+
 ```
 
 ### 🐧 **Installation on Linux**

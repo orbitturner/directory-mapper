@@ -7,7 +7,7 @@ $adminRights = ([Security.Principal.WindowsPrincipal] [Security.Principal.Window
 
 # Check if the user has administrator rights
 if (-not $adminRights) {
-    return Write-Host "❌ Please, run this script as an administrator. Right-click the PowerShell icon and select 'Run as Administrator.' 😫😫 Are you Mad ?!"
+    return Write-Error "❌ Please, run this script as an administrator. Right-click the PowerShell icon and select 'Run as Administrator.' 😫😫 Are you Mad ?!"
 }
 
 $installPath = "C:\Program Files\OrbitDirectoryMapper"
@@ -36,14 +36,12 @@ Write-Host "🛠 Checking installation of Python and Git"
 
 # Check if Python is installed
 if (!(Get-Command python -ErrorAction SilentlyContinue)) {
-    Write-Host "❌ Python is not installed. Please install Python before continuing." -ForegroundColor Red
-    exit 1
+    return Write-Error "❌ Python is not installed. Please install Python before continuing." -ForegroundColor Red
 }
 
 # Check if Git is installed
 if (!(Get-Command git -ErrorAction SilentlyContinue)) {
-    Write-Host "❌ Git is not installed. Please install Git before continuing." -ForegroundColor Red
-    exit 1
+    return Write-Error "❌ Git is not installed. Please install Git before continuing." -ForegroundColor Red
 }
 
 Write-Host "✅ Python and Git are installed."
@@ -85,4 +83,11 @@ Write-Host "🎉 Successful installation in $installPath. "
 
 Write-Host "🚀 You can now use the 'dirmap' command from your terminal 🚀"
 
-dirmap --help
+# Try/Catch block for dirmap --help
+try {
+    dirmap --help
+}
+catch {
+    # Inform the user of the error and suggest to close and reopen the terminal
+    Write-Host "❌ An error occurred while running 'dirmap --help'. Please close and reopen your terminal. Error: $_"
+}

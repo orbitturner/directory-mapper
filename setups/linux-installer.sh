@@ -83,9 +83,8 @@ chmod +x "$installPath/dirmap"
 # Detect the user's shell
 detect_shell
 
-# Add the applications directory to the appropriate init file
-Write-Host " Making The App Global..."
-# echo "export PATH=\$PATH:$installPath" >> "$HOME/$INIT_FILE"
+# Making the app launcher globally available
+echo "📝 Adding the application launcher Globally"
 ln -s $installPath/dirmap /usr/local/bin/dirmap
 
 echo "✅ Repository cloned and alias added to the $SHELL_NAME initialization file."
@@ -93,7 +92,7 @@ echo "✅ Repository cloned and alias added to the $SHELL_NAME initialization fi
 echo "🎉 Successful installation in $installPath."
 
 # Write-Host "🔄 Refreshing the Environment & Shell..."
-# source "$HOME/$INIT_FILE"
+source "$HOME/$INIT_FILE"
 
 echo "🚀 You can now use the dirmap command from your terminal 🚀"
 
