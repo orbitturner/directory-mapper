@@ -77,7 +77,7 @@ git clone https://github.com/orbitturner/directory-mapper "$installPath"
 
 # Create a script to run the application
 echo "📝 Creating the application execution script"
-echo -e "#!/bin/bash\npython \"$installPath/orbit_directory_mapper.py\" \"\$@\"" > "$installPath/dirmap"
+echo -e "#!/bin/bash\npython3 \"$installPath/orbit_directory_mapper.py\" \"\$@\"" > "$installPath/dirmap"
 chmod +x "$installPath/dirmap"
 
 # Detect the user's shell
