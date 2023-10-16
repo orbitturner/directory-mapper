@@ -27,9 +27,7 @@ detect_shell() {
 
 # Check if a previous installation exists
 if [ -d "$installPath" ]; then
-    # read -p "The program is already installed at $installPath. Do you want to reinstall? (Y/N): " reinstall
-    echo "The program is already installed at $installPath. Do you want to reinstall? (Y/N): "
-    read reinstall
+    read -p "The program is already installed at $installPath. Do you want to reinstall? (Y/N): " reinstall
 
     if [ "$reinstall" == "Y" ]; then
         # Uninstall the existing program and remove its entry from the environment
