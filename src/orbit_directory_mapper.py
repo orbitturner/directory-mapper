@@ -51,7 +51,7 @@ def settings_menu_command(args):
 # ========================
 # MAIN
 # ========================
-if __name__ == "__main__":
+def bootstrap():
     # Welcome message
     print_colored_ascii_art()
     parser = argparse.ArgumentParser(description="Display or Create a Folder Structure in a Second.")
@@ -95,3 +95,11 @@ if __name__ == "__main__":
     else:
         # If no sub-command is specified, execute the default command (view)
         check_for_update(args)
+
+
+
+# ========================
+# MAIN
+# ========================
+if __name__ == "__main__":
+    bootstrap()

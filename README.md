@@ -1,53 +1,48 @@
-🚀 **Orbit Directory Mapper**
-=========================
+# 🚀 **Orbit Directory Mapper**
 
-💡 Unlock the power of directory management with Orbit Directory Mapper! View your file structures in ASCII, JSON, or YAML formats. 🌐 Effortlessly create directory trees using descriptive JSON files. Elevate your file organization game with ease. 🚀🌳 
+💡 Unlock the power of directory management with Orbit Directory Mapper! View your file structures in ASCII, JSON, or YAML formats. 🌐 Effortlessly create directory trees using descriptive JSON files. Elevate your file organization game with ease. 🚀🌳
 
 <p align="center"> 
   <img src="./.assets/dirmap_cover.png" />
 </p>
 
-📜 **Table of Contents**
----------------------
+## 📜 **Table of Contents**
 
-*   [Features](#features)
-*   [Prerequisites](#prerequisites)
-*   [Installation](#installation)
-    *   [On Windows](#on-windows)
-    *   [On Linux](#on-linux)
-*   [Usage](#usage)
-    *   [View Command (Default)](#view-command-default)
-    *   [Create Command](#create-command)
-    *   [Check-Update Command](#check-update-command)
-*   [Updates](#updates)
-*   [Contributions](#contributions)
-*   [License](#license)
----------------------
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+  - [On Windows](#on-windows)
+  - [On Linux](#on-linux)
+- [Usage](#usage)
+  - [View Command (Default)](#view-command-default)
+  - [Create Command](#create-command)
+  - [Check-Update Command](#check-update-command)
+- [Updates](#updates)
+- [Contributions](#contributions)
+- [License](#license)
 
-🚀 **Features**
------------
+---
 
-*   Visualization in ASCII, JSON, or YAML of a folder's structure.
-*   Creation of tree structures from JSON descriptions.
-*   Coming soon: Export & Compression of a folder's structure in JSON or YAML format.
-*   Installation in one command.
-*   Lightning-fast.
-*   Easy to customize.
+## 🚀 **Features**
 
+- Visualization in ASCII, JSON, or YAML of a folder's structure.
+- Creation of tree structures from JSON descriptions.
+- Coming soon: Export & Compression of a folder's structure in JSON or YAML format.
+- Installation in one command.
+- Lightning-fast.
+- Easy to customize.
 
-🛠 **Prerequisites**
-------------
+## 🛠 **Prerequisites**
 
-*   **Python** installed on your machine.
-*   **Pip** installed on your machine.
-*   **Git** installed on your machine.
+- **Python** installed on your machine.
+- **Pip** installed on your machine.
+- **Git** installed on your machine.
 
-
-📥 **Installation**
----------------
+## 📥 **Installation**
 
 ### 🚀 **Installation on Windows**
-```powershell	
+
+```powershell
 Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1' | Invoke-Expression
 
 ```
@@ -55,15 +50,15 @@ Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubuserconte
 > **Note:** For updates, simply run the same command again.
 
 ### 🐧 **Installation on Linux**
+
 ```bash
-wget https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh && bash linux-installer.sh
+wget https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh && sudo bash linux-installer.sh
 
 ```
+
 For updates, simply run the same command again.
 
-
-🧑‍💻 **Usage**
------------------
+## 🧑‍💻 **Usage**
 
 ### View Command (Default)
 
@@ -73,10 +68,10 @@ This command is used to visualize the directory structure in ASCII art.
 dirmap view \[--ignore <folder1 folder2>\] \[--regex <regex\_pattern>\] \[--format <json/yaml>\] <folder\_path>
 ```
 
-*   `folder_path`: Path of the directory to explore.
-*   `--ignore` _(optional)_: Specify folders to ignore.
-*   `--regex` _(optional)_: Use a regex pattern to ignore certain folders.
-*   `--format` _(optional)_: Display the directory structure in JSON or YAML format.
+- `folder_path`: Path of the directory to explore.
+- `--ignore` _(optional)_: Specify folders to ignore.
+- `--regex` _(optional)_: Use a regex pattern to ignore certain folders.
+- `--format` _(optional)_: Display the directory structure in JSON or YAML format.
 
 ### Create Command
 
@@ -86,10 +81,10 @@ Use this command to create a directory structure based on a description file.
 dirmap create --description <description\_file.json> \[--ignore <folder1 folder2>\] \[--regex <regex\_pattern>\] <folder\_path>
 ```
 
-*   `folder_path`: Path of the directory where the structure will be created.
-*   `--description`: Path of the JSON description file for the directory structure.
-*   `--ignore` _(optional)_: Specify folders to ignore.
-*   `--regex` _(optional)_: Use a regex pattern to ignore certain folders.
+- `folder_path`: Path of the directory where the structure will be created.
+- `--description`: Path of the JSON description file for the directory structure.
+- `--ignore` _(optional)_: Specify folders to ignore.
+- `--regex` _(optional)_: Use a regex pattern to ignore certain folders.
 
 ### Check-Update Command
 
@@ -99,23 +94,18 @@ This command checks for updates from the remote repository and provides instruct
 dirmap check-update
 ```
 
+## 🖼️ **Screenshots**
 
-  
-🖼️ **Screenshots**
------------------
 See the [Assets Folder](./.assets) for more screens.
 
-🔄 **Updates**
----------------
+## 🔄 **Updates**
 
 Follow the [project's updates](./versions-history.json).
 
-🤝 **Contributions**
-----------------
+## 🤝 **Contributions**
 
 Contributions are welcome! Check the [contribution guide](CONTRIBUTING.md) to get started.
 
-📄 **License**
-----------
+## 📄 **License**
 
 This project is under the MIT license. Check the [LICENSE](LICENSE) file for more details.

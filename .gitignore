@@ -5,5 +5,13 @@ __pycache__
 # Logs
 logs/*.log
 
+# Builds
+build
+dist
+*.spec
+
+# Envs
+venv
+
 # TODO
 # TODO.md

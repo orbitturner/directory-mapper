@@ -1,0 +1,615 @@
+2023-10-11 13:01:34.521 | INFO     | __main__:view_command:16 - 🌲 Operation Start 🌲
+2023-10-11 13:01:34.523 | INFO     | __main__:view_command:17 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-11 13:01:34.525 | INFO     | __main__:view_command:21 - 📂 Displaying Directory Structure in JSON Format:
+
+2023-10-11 13:01:34.528 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}
+2023-10-11 13:01:34.528 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}
+2023-10-11 13:01:34.529 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}
+2023-10-11 13:01:34.530 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'2023-10-08.log': 'File'}
+2023-10-11 13:01:34.530 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}
+2023-10-11 13:01:34.531 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}
+2023-10-11 13:01:34.531 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}
+2023-10-11 13:01:34.532 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}
+2023-10-11 13:01:34.533 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}
+2023-10-11 13:01:34.533 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}
+2023-10-11 13:01:34.534 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'2023-10-08.log': 'File'}
+2023-10-11 13:01:34.534 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}
+2023-10-11 13:01:34.534 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}
+2023-10-11 13:01:34.534 | DEBUG    | utils.arborescence_util:generate_directory_json:68 - 📂 Directory JSON: {'binaries': {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}, 'dist': {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}, 'package.json': 'File', 'prompt.orbit.ini': 'File', 'README.md': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'setups': {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}, 'src': {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}, 'TODO.md': 'File', 'tsconfig.json': 'File', 'yarn.lock': 'File'}
+2023-10-11 13:20:52.970 | INFO     | __main__:main:76 - 🌟 Deployment Start 🌟
+2023-10-11 13:20:52.972 | INFO     | __main__:main:83 - Current version in manifest.json: 1.1.1
+2023-10-11 13:20:52.972 | INFO     | __main__:main:84 - Deployment branch: main
+2023-10-11 13:20:59.973 | INFO     | __main__:main:87 - Selected version type: minor
+2023-10-11 13:20:59.974 | INFO     | __main__:main:91 - 🔼 New version generated: 1.2.0
+2023-10-11 13:21:00.001 | INFO     | __main__:main:94 - 📝 Last commit message: ✨ Implemented modular command-line interface with dedicated commands for 'view', 'create', and 'check-update'.
+🛠 Enhanced and organized command-line options for better user experience.
+📝 Updated README with comprehensive usage instructions and detailed TOC.
+🌐 Translated README to English, maintaining a consistent and user-friendly tone.
+🚀 Added HTML version of the usage section for better web presentation.
+🔄 Refactored and optimized codebase for cleaner and more efficient execution.
+🎨 Added emojis throughout the code and documentation for a more lively and engaging experience.
+🌟 Implemented an update checker script for users to easily check and apply updates.
+📄 Created an HTML version of the README for improved online readability.
+📰 Provided social media-friendly descriptions for better project promotion.
+👾 Handled various user prompts, error messages, and validations for a more user-friendly experience.
+🚢 Prepared the project for deployment with an update checker and installation scripts.
+📚 Generated comprehensive and dynamic TOC for the README.
+🧹 Refactored and reorganized code for better readability and maintainability.
+🔄 Updated the update-checker script to support both Windows and Linux.
+🌈 Improved ASCII art in the directory mapper script.
+💻 Created a deployment script that updates the version in manifest.json, updates version-history.json, and pushes changes to the repository.
+📢 Added a startup ASCII art message in the directory mapper script.
+🔧 Implemented a dynamic approach for specifying colors in ASCII art.
+📥 Enhanced the installation script to include additional dependencies and improve user interaction.
+🎉 Celebrated successful installations with colorful and dynamic messages.
+🔍 Added a check for existing installations in the installation script, allowing users to choose to reinstall.
+🔐 Implemented administrative privilege checks in the Windows installation script.
+💬 Improved and expanded user prompts and messages for clarity and engagement.
+🔄 Enhanced the update-checker script to support multiple platforms and display relevant update instructions.
+🏷 Updated manifest.json with additional information and improved formatting.
+🚨 Addressed issues related to missing parameters and errors in the directory mapper script.
+💄 Added color options and improved formatting for better visual appeal.
+🗃 Organized and optimized codebase for better maintainability and extensibility.
+📋 Generated a complete HTML version of the README with an attractive and structured layout.
+🚀 Created a powerful and flexible command-line tool for managing directory structures.
+🌐 Expanded the project's global reach through translation and language support.
+🌐 Improved the global accessibility of the project by providing an English version of the documentation.
+🤖 Automated version incrementation and update history entry in the deployment script.
+🌐 Globalized the project by providing documentation in multiple languages.
+📚 Documented and showcased various usage scenarios and commands in the README.
+🎨 Beautified and stylized the README with consistent formatting and emojis.
+🔗 Linked relevant sections in the README for easy navigation.
+💼 Provided professional and engaging descriptions for social media promotion.
+🚀 Successfully deployed and promoted the project for widespread adoption.
+🇺🇸 Converted The Whole Project to English for Better understanding world wide.
+2023-10-11 13:21:00.006 | INFO     | __main__:main:98 - ✅ Version updated in manifest.json
+2023-10-11 13:21:00.010 | INFO     | __main__:main:102 - ✅ Version added to version-history.json
+2023-10-11 13:21:00.011 | INFO     | __main__:push_to_git:62 - 📡 Committing files to Git
+2023-10-11 13:21:00.125 | INFO     | __main__:push_to_git:65 - 🚀 Pushing to Git on branch main
+2023-10-11 13:21:13.378 | INFO     | __main__:push_to_git:67 - ✅ Push to Git successful
+2023-10-11 13:21:13.380 | INFO     | __main__:main:107 - 🎉 Deployment successful! 🎉
+2023-10-12 10:05:19.795 | INFO     | __main__:create_command:34 - 🌲 Operation Start 🌲
+2023-10-12 10:05:19.796 | INFO     | utils.arborescence_util:create_directory:98 - 📂 Opening the JSON description: C:\Users\orbit\Documents\desc.json
+2023-10-12 10:05:19.797 | DEBUG    | utils.arborescence_util:create_directory:102 - 📂 Description to Create: {'binaries': {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}, 'dist': {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}, 'package.json': 'File', 'prompt.orbit.ini': 'File', 'README.md': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'setups': {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}, 'src': {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}, 'TODO.md': 'File', 'tsconfig.json': 'File', 'yarn.lock': 'File'}
+2023-10-12 10:05:19.797 | INFO     | utils.arborescence_util:create_directory:119 - 📂 Folder created: C:\Users\orbit\Documents\Test\binaries
+2023-10-12 10:05:19.799 | INFO     | utils.arborescence_util:create_directory:98 - 📂 Opening the JSON description: {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}
+2023-10-12 10:05:19.800 | ERROR    | utils.arborescence_util:create_directory:132 - ❌ An error occurred while creating the directory: expected str, bytes or os.PathLike object, not dict
+2023-10-12 10:05:19.801 | INFO     | utils.arborescence_util:create_directory:119 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist
+2023-10-12 10:05:19.802 | INFO     | utils.arborescence_util:create_directory:98 - 📂 Opening the JSON description: {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}
+2023-10-12 10:05:19.803 | ERROR    | utils.arborescence_util:create_directory:132 - ❌ An error occurred while creating the directory: expected str, bytes or os.PathLike object, not dict
+2023-10-12 10:05:19.804 | INFO     | utils.arborescence_util:create_directory:125 - ✅ File created: C:\Users\orbit\Documents\Test\package.json
+2023-10-12 10:05:19.806 | INFO     | utils.arborescence_util:create_directory:125 - ✅ File created: C:\Users\orbit\Documents\Test\prompt.orbit.ini
+2023-10-12 10:05:19.807 | INFO     | utils.arborescence_util:create_directory:125 - ✅ File created: C:\Users\orbit\Documents\Test\README.md
+2023-10-12 10:05:19.809 | INFO     | utils.arborescence_util:create_directory:119 - 📂 Folder created: C:\Users\orbit\Documents\Test\scripts
+2023-10-12 10:05:19.810 | INFO     | utils.arborescence_util:create_directory:98 - 📂 Opening the JSON description: {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}
+2023-10-12 10:05:19.812 | ERROR    | utils.arborescence_util:create_directory:132 - ❌ An error occurred while creating the directory: expected str, bytes or os.PathLike object, not dict
+2023-10-12 10:05:19.813 | INFO     | utils.arborescence_util:create_directory:119 - 📂 Folder created: C:\Users\orbit\Documents\Test\setups
+2023-10-12 10:05:19.815 | INFO     | utils.arborescence_util:create_directory:98 - 📂 Opening the JSON description: {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}
+2023-10-12 10:05:19.817 | ERROR    | utils.arborescence_util:create_directory:132 - ❌ An error occurred while creating the directory: expected str, bytes or os.PathLike object, not dict
+2023-10-12 10:05:19.819 | INFO     | utils.arborescence_util:create_directory:119 - 📂 Folder created: C:\Users\orbit\Documents\Test\src
+2023-10-12 10:05:19.819 | INFO     | utils.arborescence_util:create_directory:98 - 📂 Opening the JSON description: {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}
+2023-10-12 10:05:19.820 | ERROR    | utils.arborescence_util:create_directory:132 - ❌ An error occurred while creating the directory: expected str, bytes or os.PathLike object, not dict
+2023-10-12 10:05:19.822 | INFO     | utils.arborescence_util:create_directory:125 - ✅ File created: C:\Users\orbit\Documents\Test\TODO.md
+2023-10-12 10:05:19.823 | INFO     | utils.arborescence_util:create_directory:125 - ✅ File created: C:\Users\orbit\Documents\Test\tsconfig.json
+2023-10-12 10:05:19.824 | INFO     | utils.arborescence_util:create_directory:125 - ✅ File created: C:\Users\orbit\Documents\Test\yarn.lock
+2023-10-12 10:05:19.825 | INFO     | utils.arborescence_util:create_directory:129 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.570 | INFO     | __main__:create_command:34 - 🌲 Operation Start 🌲
+2023-10-12 11:49:03.571 | INFO     | utils.arborescence_util:create_directory:100 - 📂 Opening the JSON description: C:\Users\orbit\Documents\desc.json
+2023-10-12 11:49:03.580 | DEBUG    | utils.arborescence_util:create_directory:104 - 📂 Description to Create: {'binaries': {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}, 'dist': {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}, 'package.json': 'File', 'prompt.orbit.ini': 'File', 'README.md': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'setups': {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}, 'src': {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}, 'TODO.md': 'File', 'tsconfig.json': 'File', 'yarn.lock': 'File'}
+2023-10-12 11:49:03.580 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\binaries
+2023-10-12 11:49:03.580 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: binaries, Content: {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}
+2023-10-12 11:49:03.582 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\binaries\logs
+2023-10-12 11:49:03.583 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: logs, Content: {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}
+2023-10-12 11:49:03.584 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\binaries\logs\2023-06-25.log
+2023-10-12 11:49:03.585 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\binaries\logs\2023-06-26.log
+2023-10-12 11:49:03.586 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.587 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.588 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist
+2023-10-12 11:49:03.589 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: dist, Content: {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}
+2023-10-12 11:49:03.589 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\commands
+2023-10-12 11:49:03.590 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: commands, Content: {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}
+2023-10-12 11:49:03.591 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\export.js
+2023-10-12 11:49:03.592 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\export.js.map
+2023-10-12 11:49:03.594 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\import.js
+2023-10-12 11:49:03.594 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\import.js.map
+2023-10-12 11:49:03.597 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\install.js
+2023-10-12 11:49:03.598 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\install.js.map
+2023-10-12 11:49:03.599 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.601 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\index.js
+2023-10-12 11:49:03.603 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\index.js.map
+2023-10-12 11:49:03.604 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\logs
+2023-10-12 11:49:03.606 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: logs, Content: {'2023-10-08.log': 'File'}
+2023-10-12 11:49:03.606 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\logs\2023-10-08.log
+2023-10-12 11:49:03.607 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.608 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\package.json
+2023-10-12 11:49:03.609 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\scripts
+2023-10-12 11:49:03.610 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: scripts, Content: {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}
+2023-10-12 11:49:03.610 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\install-linux-deps.sh
+2023-10-12 11:49:03.611 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\install-windows-deps.ps1
+2023-10-12 11:49:03.613 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\msodbcsql.msi
+2023-10-12 11:49:03.614 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\mssqlcli-tools-setup.msi
+2023-10-12 11:49:03.616 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\pgsql-cli-options.md
+2023-10-12 11:49:03.617 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\postgresql-setup.exe
+2023-10-12 11:49:03.618 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.620 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\utils
+2023-10-12 11:49:03.621 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: utils, Content: {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}
+2023-10-12 11:49:03.621 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\banner.js
+2023-10-12 11:49:03.622 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\banner.js.map
+2023-10-12 11:49:03.623 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\logger.js
+2023-10-12 11:49:03.624 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\logger.js.map
+2023-10-12 11:49:03.627 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\types.js
+2023-10-12 11:49:03.628 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\types.js.map
+2023-10-12 11:49:03.629 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.630 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.632 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\package.json
+2023-10-12 11:49:03.633 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\prompt.orbit.ini
+2023-10-12 11:49:03.635 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\README.md
+2023-10-12 11:49:03.636 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\scripts
+2023-10-12 11:49:03.637 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: scripts, Content: {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}
+2023-10-12 11:49:03.637 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\install-linux-deps.sh
+2023-10-12 11:49:03.638 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\install-windows-deps.ps1
+2023-10-12 11:49:03.640 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\msodbcsql.msi
+2023-10-12 11:49:03.641 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\mssqlcli-tools-setup.msi
+2023-10-12 11:49:03.642 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\pgsql-cli-options.md
+2023-10-12 11:49:03.643 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\postgresql-setup.exe
+2023-10-12 11:49:03.644 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.646 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\setups
+2023-10-12 11:49:03.647 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: setups, Content: {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}
+2023-10-12 11:49:03.647 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\setups\linux-installer.sh
+2023-10-12 11:49:03.650 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\setups\windows-installer.ps1
+2023-10-12 11:49:03.651 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.653 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src
+2023-10-12 11:49:03.655 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: src, Content: {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}
+2023-10-12 11:49:03.655 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src\commands
+2023-10-12 11:49:03.656 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: commands, Content: {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}
+2023-10-12 11:49:03.657 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\commands\export.ts
+2023-10-12 11:49:03.658 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\commands\import.ts
+2023-10-12 11:49:03.660 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\commands\install.ts
+2023-10-12 11:49:03.661 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.662 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\index.ts
+2023-10-12 11:49:03.663 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src\logs
+2023-10-12 11:49:03.664 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: logs, Content: {'2023-10-08.log': 'File'}
+2023-10-12 11:49:03.665 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\logs\2023-10-08.log
+2023-10-12 11:49:03.666 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.667 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src\utils
+2023-10-12 11:49:03.669 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: utils, Content: {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}
+2023-10-12 11:49:03.669 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\utils\banner.ts
+2023-10-12 11:49:03.671 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\utils\logger.ts
+2023-10-12 11:49:03.672 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\utils\types.ts
+2023-10-12 11:49:03.673 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.674 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:49:03.675 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\TODO.md
+2023-10-12 11:49:03.677 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\tsconfig.json
+2023-10-12 11:49:03.678 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\yarn.lock
+2023-10-12 11:49:03.679 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.592 | INFO     | __main__:create_command:34 - 🌲 Operation Start 🌲
+2023-10-12 11:50:04.593 | INFO     | utils.arborescence_util:create_directory:100 - 📂 Opening the JSON description: C:\Users\orbit\Documents\desc.json
+2023-10-12 11:50:04.595 | DEBUG    | utils.arborescence_util:create_directory:104 - 📂 Description to Create: {'binaries': {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}, 'dist': {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}, 'package.json': 'File', 'prompt.orbit.ini': 'File', 'README.md': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'setups': {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}, 'src': {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}, 'TODO.md': 'File', 'tsconfig.json': 'File', 'yarn.lock': 'File'}
+2023-10-12 11:50:04.595 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\binaries
+2023-10-12 11:50:04.596 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: binaries, Content: {'logs': {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}}
+2023-10-12 11:50:04.596 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\binaries\logs
+2023-10-12 11:50:04.598 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: logs, Content: {'2023-06-25.log': 'File', '2023-06-26.log': 'File'}
+2023-10-12 11:50:04.598 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\binaries\logs\2023-06-25.log
+2023-10-12 11:50:04.600 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\binaries\logs\2023-06-26.log
+2023-10-12 11:50:04.601 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.601 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.603 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist
+2023-10-12 11:50:04.603 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: dist, Content: {'commands': {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}, 'index.js': 'File', 'index.js.map': 'File', 'logs': {'2023-10-08.log': 'File'}, 'package.json': 'File', 'scripts': {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}, 'utils': {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}}
+2023-10-12 11:50:04.604 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\commands
+2023-10-12 11:50:04.605 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: commands, Content: {'export.js': 'File', 'export.js.map': 'File', 'import.js': 'File', 'import.js.map': 'File', 'install.js': 'File', 'install.js.map': 'File'}
+2023-10-12 11:50:04.605 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\export.js
+2023-10-12 11:50:04.606 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\export.js.map
+2023-10-12 11:50:04.607 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\import.js
+2023-10-12 11:50:04.608 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\import.js.map
+2023-10-12 11:50:04.610 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\install.js
+2023-10-12 11:50:04.612 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\commands\install.js.map
+2023-10-12 11:50:04.614 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.615 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\index.js
+2023-10-12 11:50:04.617 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\index.js.map
+2023-10-12 11:50:04.619 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\logs
+2023-10-12 11:50:04.620 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: logs, Content: {'2023-10-08.log': 'File'}
+2023-10-12 11:50:04.620 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\logs\2023-10-08.log
+2023-10-12 11:50:04.621 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.623 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\package.json
+2023-10-12 11:50:04.624 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\scripts
+2023-10-12 11:50:04.624 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: scripts, Content: {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}
+2023-10-12 11:50:04.625 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\install-linux-deps.sh
+2023-10-12 11:50:04.627 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\install-windows-deps.ps1
+2023-10-12 11:50:04.629 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\msodbcsql.msi
+2023-10-12 11:50:04.631 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\mssqlcli-tools-setup.msi
+2023-10-12 11:50:04.632 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\pgsql-cli-options.md
+2023-10-12 11:50:04.634 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\scripts\postgresql-setup.exe
+2023-10-12 11:50:04.634 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.635 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\dist\utils
+2023-10-12 11:50:04.636 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: utils, Content: {'banner.js': 'File', 'banner.js.map': 'File', 'logger.js': 'File', 'logger.js.map': 'File', 'types.js': 'File', 'types.js.map': 'File'}
+2023-10-12 11:50:04.637 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\banner.js
+2023-10-12 11:50:04.638 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\banner.js.map
+2023-10-12 11:50:04.639 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\logger.js
+2023-10-12 11:50:04.640 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\logger.js.map
+2023-10-12 11:50:04.641 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\types.js
+2023-10-12 11:50:04.642 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\dist\utils\types.js.map
+2023-10-12 11:50:04.644 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.646 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.647 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\package.json
+2023-10-12 11:50:04.648 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\prompt.orbit.ini
+2023-10-12 11:50:04.650 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\README.md
+2023-10-12 11:50:04.652 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\scripts
+2023-10-12 11:50:04.654 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: scripts, Content: {'install-linux-deps.sh': 'File', 'install-windows-deps.ps1': 'File', 'msodbcsql.msi': 'File', 'mssqlcli-tools-setup.msi': 'File', 'pgsql-cli-options.md': 'File', 'postgresql-setup.exe': 'File'}
+2023-10-12 11:50:04.654 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\install-linux-deps.sh
+2023-10-12 11:50:04.656 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\install-windows-deps.ps1
+2023-10-12 11:50:04.658 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\msodbcsql.msi
+2023-10-12 11:50:04.659 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\mssqlcli-tools-setup.msi
+2023-10-12 11:50:04.660 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\pgsql-cli-options.md
+2023-10-12 11:50:04.662 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\scripts\postgresql-setup.exe
+2023-10-12 11:50:04.663 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.664 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\setups
+2023-10-12 11:50:04.665 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: setups, Content: {'linux-installer.sh': 'File', 'windows-installer.ps1': 'File'}
+2023-10-12 11:50:04.666 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\setups\linux-installer.sh
+2023-10-12 11:50:04.668 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\setups\windows-installer.ps1
+2023-10-12 11:50:04.669 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.671 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src
+2023-10-12 11:50:04.672 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: src, Content: {'commands': {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}, 'index.ts': 'File', 'logs': {'2023-10-08.log': 'File'}, 'utils': {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}}
+2023-10-12 11:50:04.672 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src\commands
+2023-10-12 11:50:04.673 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: commands, Content: {'export.ts': 'File', 'import.ts': 'File', 'install.ts': 'File'}
+2023-10-12 11:50:04.674 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\commands\export.ts
+2023-10-12 11:50:04.674 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\commands\import.ts
+2023-10-12 11:50:04.677 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\commands\install.ts
+2023-10-12 11:50:04.678 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.679 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\index.ts
+2023-10-12 11:50:04.680 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src\logs
+2023-10-12 11:50:04.681 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: logs, Content: {'2023-10-08.log': 'File'}
+2023-10-12 11:50:04.682 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\logs\2023-10-08.log
+2023-10-12 11:50:04.683 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.685 | INFO     | utils.arborescence_util:create_directory:126 - 📂 Folder created: C:\Users\orbit\Documents\Test\src\utils
+2023-10-12 11:50:04.686 | DEBUG    | utils.arborescence_util:create_directory:127 - 📂 Name: utils, Content: {'banner.ts': 'File', 'logger.ts': 'File', 'types.ts': 'File'}
+2023-10-12 11:50:04.687 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\utils\banner.ts
+2023-10-12 11:50:04.688 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\utils\logger.ts
+2023-10-12 11:50:04.689 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\src\utils\types.ts
+2023-10-12 11:50:04.690 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.691 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 11:50:04.692 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\TODO.md
+2023-10-12 11:50:04.694 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\tsconfig.json
+2023-10-12 11:50:04.695 | INFO     | utils.arborescence_util:create_directory:133 - ✅ File created: C:\Users\orbit\Documents\Test\yarn.lock
+2023-10-12 11:50:04.696 | INFO     | utils.arborescence_util:create_directory:137 - ✅ Directory successfully created from the JSON description.
+2023-10-12 14:07:47.663 | INFO     | __main__:main:76 - 🌟 Deployment Start 🌟
+2023-10-12 14:07:47.668 | INFO     | __main__:main:83 - Current version in manifest.json: 1.2.0
+2023-10-12 14:07:47.670 | INFO     | __main__:main:84 - Deployment branch: main
+2023-10-12 14:07:55.383 | INFO     | __main__:main:87 - Selected version type: patch
+2023-10-12 14:07:55.384 | INFO     | __main__:main:91 - 🔼 New version generated: 1.2.1
+2023-10-12 14:07:55.416 | INFO     | __main__:main:94 - 📝 Last commit message: feat(DIRECTORY-MAPPER): :sparkles: Changed & Improved Create Directory Function
+
+🔨 Further improvements to the create_directory function to handle different types of input, either a JSON file path or a dictionary directly.
+2023-10-12 14:07:55.418 | INFO     | __main__:main:98 - ✅ Version updated in manifest.json
+2023-10-12 14:07:55.426 | INFO     | __main__:main:102 - ✅ Version added to version-history.json
+2023-10-12 14:07:55.429 | INFO     | __main__:push_to_git:62 - 📡 Committing files to Git
+2023-10-12 14:07:55.537 | INFO     | __main__:push_to_git:65 - 🚀 Pushing to Git on branch main
+2023-10-12 14:08:11.726 | INFO     | __main__:push_to_git:67 - ✅ Push to Git successful
+2023-10-12 14:08:11.727 | INFO     | __main__:main:107 - 🎉 Deployment successful! 🎉
+2023-10-13 21:41:07.094 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-13 21:41:07.096 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-13 21:43:05.450 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-13 21:43:05.453 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-13 21:43:14.643 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-13 21:43:14.645 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-13 21:43:17.701 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-13 21:43:17.702 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-13 21:43:29.139 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-13 21:43:29.140 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-13 22:49:30.563 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-13 22:49:30.564 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:41:48.471 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:41:48.471 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:43:05.141 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:43:05.142 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:43:05.174 | INFO     | utils.arborescence_util:draw_directory_structure:24 - None
+2023-10-14 10:44:32.789 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:44:32.790 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:47:43.885 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:47:43.886 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:47:43.915 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.025875091552734375 seconds.
+2023-10-14 10:48:13.280 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:48:13.281 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:48:13.314 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.03111886978149414 seconds.
+2023-10-14 10:50:07.417 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:50:07.418 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:56:04.243 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:56:04.244 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:56:04.246 | ERROR    | utils.orbit_tree_builder:dir_tree_builder:27 - An error has been caught in function 'dir_tree_builder', process 'MainProcess' (25216), thread 'MainThread' (16896):
+Traceback (most recent call last):
+
+  File "C:\devReposit\DIRECTORY-MAPPER\orbit_directory_mapper.py", line 84, in <module>
+    args.func(args)
+    │    │    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │    └ <function view_command at 0x00000264AD865940>
+    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+
+  File "C:\devReposit\DIRECTORY-MAPPER\orbit_directory_mapper.py", line 31, in view_command
+    draw_directory_structure(args.folder_path, ignore_folders=args.ignore, ignore_regex=args.regex)
+    │                        │    │                           │    │                    │    └ '^\\..*'
+    │                        │    │                           │    │                    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │                        │    │                           │    └ ['node_modules', 'static']
+    │                        │    │                           └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │                        │    └ 'C:\\devReposit\\ORBIT-FAST-DATA-LOADER'
+    │                        └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    └ <function draw_directory_structure at 0x00000264ACDAA0C0>
+
+  File "C:\devReposit\DIRECTORY-MAPPER\utils\arborescence_util.py", line 19, in draw_directory_structure
+    print(dir_tree_builder(folder, None, ignore_folders, ignore_regex))
+    │     │                │             │               └ '^\\..*'
+    │     │                │             └ ['node_modules', 'static']
+    │     │                └ 'C:\\devReposit\\ORBIT-FAST-DATA-LOADER'
+    │     └ <function dir_tree_builder at 0x00000264AD8656C0>
+    └ <function print at 0x00000264ACA92DE0>
+
+> File "C:\devReposit\DIRECTORY-MAPPER\utils\orbit_tree_builder.py", line 27, in dir_tree_builder
+    settings = read_settings()
+               └ <function read_settings at 0x00000264AD865300>
+
+  File "C:\devReposit\DIRECTORY-MAPPER\utils\orbit_tree_builder.py", line 18, in read_settings
+    settings = json.load(file)
+               │    │    └ <_io.TextIOWrapper name='settings.json' mode='r' encoding='cp1252'>
+               │    └ <function load at 0x00000264AC8E8180>
+               └ <module 'json' from 'C:\\Python311\\Lib\\json\\__init__.py'>
+
+  File "C:\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           │     │  └ <method 'read' of '_io.TextIOWrapper' objects>
+           │     └ <_io.TextIOWrapper name='settings.json' mode='r' encoding='cp1252'>
+           └ <function loads at 0x00000264AC8E8220>
+  File "C:\Python311\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           │      │              │     │    │      └ '\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !...
+           │      │              │     │    └ 'strict'
+           │      │              │     └ <encodings.cp1252.IncrementalDecoder object at 0x00000264AE403090>
+           │      │              └ b'{\r\n    "tree_builder": {\r\n        "folder_color": "magenta",\r\n        "guide_style": "bold bright_blue",\r\n        "...
+           │      └ <built-in function charmap_decode>
+           └ <module 'codecs' (frozen)>
+
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x90 in position 283: character maps to <undefined>
+2023-10-14 10:56:04.274 | ERROR    | utils.arborescence_util:draw_directory_structure:19 - An error has been caught in function 'draw_directory_structure', process 'MainProcess' (25216), thread 'MainThread' (16896):
+Traceback (most recent call last):
+
+  File "C:\devReposit\DIRECTORY-MAPPER\orbit_directory_mapper.py", line 84, in <module>
+    args.func(args)
+    │    │    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │    └ <function view_command at 0x00000264AD865940>
+    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+
+  File "C:\devReposit\DIRECTORY-MAPPER\orbit_directory_mapper.py", line 31, in view_command
+    draw_directory_structure(args.folder_path, ignore_folders=args.ignore, ignore_regex=args.regex)
+    │                        │    │                           │    │                    │    └ '^\\..*'
+    │                        │    │                           │    │                    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │                        │    │                           │    └ ['node_modules', 'static']
+    │                        │    │                           └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │                        │    └ 'C:\\devReposit\\ORBIT-FAST-DATA-LOADER'
+    │                        └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    └ <function draw_directory_structure at 0x00000264ACDAA0C0>
+
+> File "C:\devReposit\DIRECTORY-MAPPER\utils\arborescence_util.py", line 19, in draw_directory_structure
+    print(dir_tree_builder(folder, None, ignore_folders, ignore_regex))
+    │     │                │             │               └ '^\\..*'
+    │     │                │             └ ['node_modules', 'static']
+    │     │                └ 'C:\\devReposit\\ORBIT-FAST-DATA-LOADER'
+    │     └ <function dir_tree_builder at 0x00000264AD8656C0>
+    └ <function print at 0x00000264ACA92DE0>
+
+  File "C:\devReposit\DIRECTORY-MAPPER\utils\orbit_tree_builder.py", line 31, in dir_tree_builder
+    guide_style=settings.get("tree_builder", {}).get("guide_style", "bold bright_blue"),
+                └ None
+
+AttributeError: 'NoneType' object has no attribute 'get'
+2023-10-14 10:56:04.299 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.05375409126281738 seconds.
+2023-10-14 10:57:12.022 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:57:12.024 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:57:12.026 | ERROR    | utils.orbit_tree_builder:dir_tree_builder:27 - An error has been caught in function 'dir_tree_builder', process 'MainProcess' (24816), thread 'MainThread' (25032):
+Traceback (most recent call last):
+
+  File "C:\devReposit\DIRECTORY-MAPPER\orbit_directory_mapper.py", line 84, in <module>
+    args.func(args)
+    │    │    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │    └ <function view_command at 0x000001B4ABC95620>
+    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+
+  File "C:\devReposit\DIRECTORY-MAPPER\orbit_directory_mapper.py", line 31, in view_command
+    draw_directory_structure(args.folder_path, ignore_folders=args.ignore, ignore_regex=args.regex)
+    │                        │    │                           │    │                    │    └ '^\\..*'
+    │                        │    │                           │    │                    └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │                        │    │                           │    └ ['node_modules', 'static']
+    │                        │    │                           └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    │                        │    └ 'C:\\devReposit\\ORBIT-FAST-DATA-LOADER'
+    │                        └ Namespace(command='view', folder_path='C:\\devReposit\\ORBIT-FAST-DATA-LOADER', ignore=['node_modules', 'static'], regex='^\\...
+    └ <function draw_directory_structure at 0x000001B4AB1DA0C0>
+
+  File "C:\devReposit\DIRECTORY-MAPPER\utils\arborescence_util.py", line 19, in draw_directory_structure
+    print(dir_tree_builder(folder, None, ignore_folders, ignore_regex))
+    │     │                │             │               └ '^\\..*'
+    │     │                │             └ ['node_modules', 'static']
+    │     │                └ 'C:\\devReposit\\ORBIT-FAST-DATA-LOADER'
+    │     └ <function dir_tree_builder at 0x000001B4ABC953A0>
+    └ <function print at 0x000001B4AAEB2DE0>
+
+> File "C:\devReposit\DIRECTORY-MAPPER\utils\orbit_tree_builder.py", line 27, in dir_tree_builder
+    settings = read_settings()
+               └ <function read_settings at 0x000001B4ABC95300>
+
+  File "C:\devReposit\DIRECTORY-MAPPER\utils\orbit_tree_builder.py", line 18, in read_settings
+    settings = json.load(file)
+               │    │    └ <_io.TextIOWrapper name='settings.json' mode='r' encoding='cp1252'>
+               │    └ <function load at 0x000001B4AAD08180>
+               └ <module 'json' from 'C:\\Python311\\Lib\\json\\__init__.py'>
+
+  File "C:\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           │     │  └ <method 'read' of '_io.TextIOWrapper' objects>
+           │     └ <_io.TextIOWrapper name='settings.json' mode='r' encoding='cp1252'>
+           └ <function loads at 0x000001B4AAD08220>
+  File "C:\Python311\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           │      │              │     │    │      └ '\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !...
+           │      │              │     │    └ 'strict'
+           │      │              │     └ <encodings.cp1252.IncrementalDecoder object at 0x000001B4AC82C350>
+           │      │              └ b'{\r\n    "tree_builder": {\r\n        "folder_color": "magenta",\r\n        "guide_style": "bold bright_blue",\r\n        "...
+           │      └ <built-in function charmap_decode>
+           └ <module 'codecs' (frozen)>
+
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x90 in position 283: character maps to <undefined>
+2023-10-14 10:57:51.666 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:57:51.667 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 10:59:07.754 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 10:59:07.755 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:10:32.883 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:10:32.884 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:11:19.792 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:11:19.793 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:12:06.524 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:12:06.525 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:13:25.594 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:13:25.595 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:14:53.223 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:14:53.224 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:17:37.798 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:17:37.799 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:19:24.433 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:19:24.434 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:22:59.419 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:22:59.420 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:22:59.450 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.028089284896850586 seconds.
+2023-10-14 11:45:24.082 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:45:24.083 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:45:24.118 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.03288412094116211 seconds.
+2023-10-14 11:46:37.992 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:46:37.993 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:46:38.024 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.029378175735473633 seconds.
+2023-10-14 11:50:30.032 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:50:30.033 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:50:30.063 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02678990364074707 seconds.
+2023-10-14 11:51:53.975 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:51:53.976 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:51:54.009 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.029350996017456055 seconds.
+2023-10-14 11:53:02.539 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:53:02.540 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:53:02.570 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.0277101993560791 seconds.
+2023-10-14 11:53:47.627 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:53:47.628 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:53:47.656 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02562737464904785 seconds.
+2023-10-14 11:54:05.997 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:54:05.998 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:54:06.027 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02695631980895996 seconds.
+2023-10-14 11:54:20.858 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:54:20.861 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:54:20.892 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.028620004653930664 seconds.
+2023-10-14 11:55:08.506 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:55:08.509 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:55:08.539 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02953815460205078 seconds.
+2023-10-14 11:55:36.925 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:55:36.928 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:55:36.961 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.0317530632019043 seconds.
+2023-10-14 11:55:55.560 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:55:55.562 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:55:55.592 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.027865886688232422 seconds.
+2023-10-14 11:56:07.340 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:56:07.342 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:56:07.374 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.029681921005249023 seconds.
+2023-10-14 11:56:28.831 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:56:28.833 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:56:28.862 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02854299545288086 seconds.
+2023-10-14 11:56:47.492 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:56:47.493 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:56:47.528 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.0315403938293457 seconds.
+2023-10-14 11:57:08.991 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:57:08.992 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:57:09.022 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.028115510940551758 seconds.
+2023-10-14 11:57:39.428 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:57:39.429 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:57:39.459 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02819681167602539 seconds.
+2023-10-14 11:58:01.911 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:58:01.912 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:58:01.946 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.031325340270996094 seconds.
+2023-10-14 11:58:17.275 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:58:17.276 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:58:17.308 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.03005504608154297 seconds.
+2023-10-14 11:58:47.624 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:58:47.625 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:58:47.660 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.03374218940734863 seconds.
+2023-10-14 11:59:29.558 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:59:29.559 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:59:29.593 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.03055405616760254 seconds.
+2023-10-14 11:59:52.446 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 11:59:52.448 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 11:59:52.479 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.028632640838623047 seconds.
+2023-10-14 12:00:08.459 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:00:08.460 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:00:08.497 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.033941030502319336 seconds.
+2023-10-14 12:00:25.206 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:00:25.208 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:00:25.241 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.029949426651000977 seconds.
+2023-10-14 12:00:36.248 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:00:36.250 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:00:36.279 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.026541471481323242 seconds.
+2023-10-14 12:01:22.761 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:01:22.762 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:01:22.793 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02913379669189453 seconds.
+2023-10-14 12:01:34.813 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:01:34.814 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:01:34.852 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.03610420227050781 seconds.
+2023-10-14 12:01:56.170 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:01:56.171 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:01:56.202 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.029061555862426758 seconds.
+2023-10-14 12:02:10.661 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:02:10.662 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:02:10.697 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.0321500301361084 seconds.
+2023-10-14 12:02:24.023 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:02:24.025 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:02:24.056 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.029732704162597656 seconds.
+2023-10-14 12:02:40.410 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:02:40.412 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:02:40.444 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.030684709548950195 seconds.
+2023-10-14 12:02:55.128 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:02:55.130 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:02:55.159 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02689814567565918 seconds.
+2023-10-14 12:03:10.390 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:03:10.392 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:03:10.424 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.030959606170654297 seconds.
+2023-10-14 12:03:28.068 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:03:28.069 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:03:28.110 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.03802967071533203 seconds.
+2023-10-14 12:20:25.081 | INFO     | __main__:view_command:23 - 🌲 Operation Start 🌲
+2023-10-14 12:20:25.082 | INFO     | __main__:view_command:24 - 📂 Folder Structure: C:\devReposit\ORBIT-FAST-DATA-LOADER
+2023-10-14 12:20:25.114 | INFO     | utils.arborescence_util:draw_directory_structure:24 - ✅ Directory structure successfully drawn in 0.02993011474609375 seconds.
+2023-10-14 13:53:24.969 | INFO     | utils.settings_manager:reset_settings:49 - 🔄 Settings reset to default.
+2023-10-14 14:20:01.113 | INFO     | __main__:main:76 - 🌟 Deployment Start 🌟
+2023-10-14 14:20:01.114 | INFO     | __main__:main:83 - Current version in manifest.json: 1.2.1
+2023-10-14 14:20:01.116 | INFO     | __main__:main:84 - Deployment branch: main
+2023-10-14 14:20:11.748 | INFO     | __main__:main:87 - Selected version type: minor
+2023-10-14 14:20:11.750 | INFO     | __main__:main:91 - 🔼 New version generated: 1.3.0
+2023-10-14 14:20:11.781 | INFO     | __main__:main:94 - 📝 Last commit message: feat: 🚀 Integrate Settings Manager and Menu
+
+- ✨ Added a comprehensive Settings Manager (`settings_manager.py`) for reading, updating, and resetting settings in `settings.json`.
+- 🖌️ Created an interactive Settings Menu (`settings_menu.py`) using `npyscreen` for users to edit and reset various tree builder parameters.
+- 🔄 Updated the `dir_tree_builder` function in `orbit_tree_builder.py` to dynamically fetch styling parameters from the Settings Manager.
+- 📝 Adjusted the structure of the `settings.json` file to include default values for tree builder parameters.
+
+refactor: 🛠️ Refactor Settings JSON Handling
+
+- 🔄 Refactored the `SettingsForm` class in the Settings Menu to correctly handle attribute assignments, eliminating an `AttributeError`.
+- 🌐 Improved the structure and readability of the code, added logs, emojis, and meaningful comments.
+2023-10-14 14:20:11.784 | INFO     | __main__:main:98 - ✅ Version updated in manifest.json
+2023-10-14 14:20:11.793 | INFO     | __main__:main:102 - ✅ Version added to version-history.json
+2023-10-14 14:20:11.794 | INFO     | __main__:push_to_git:62 - 📡 Committing files to Git
+2023-10-14 14:20:11.917 | INFO     | __main__:push_to_git:65 - 🚀 Pushing to Git on branch main
+2023-10-14 14:20:21.377 | INFO     | __main__:push_to_git:67 - ✅ Push to Git successful
+2023-10-14 14:20:21.379 | INFO     | __main__:main:107 - 🎉 Deployment successful! 🎉
+2023-10-14 16:56:16.147 | INFO     | __main__:main:76 - 🌟 Deployment Start 🌟
+2023-10-14 16:56:16.153 | INFO     | __main__:main:83 - Current version in manifest.json: 1.3.0
+2023-10-14 16:56:16.154 | INFO     | __main__:main:84 - Deployment branch: main
+2023-10-14 16:56:21.172 | INFO     | __main__:main:87 - Selected version type: patch
+2023-10-14 16:56:21.174 | INFO     | __main__:main:91 - 🔼 New version generated: 1.3.1
+2023-10-14 16:56:21.202 | INFO     | __main__:main:94 - 📝 Last commit message: docs(DIRECTORY-MAPPER): :page_facing_up: Added LIcence & Important Files for OSS
+
+docs: ✨ Add Contribution Guidelines and Code of Conduct  - Created a Contribution.md file to guide contributors in setting up the development environment and making contributions. - Added a Code of Conduct outlining the expected behavior for all contributors.
+2023-10-14 16:56:21.204 | INFO     | __main__:main:98 - ✅ Version updated in manifest.json
+2023-10-14 16:56:21.218 | INFO     | __main__:main:102 - ✅ Version added to version-history.json
+2023-10-14 16:56:21.219 | INFO     | __main__:push_to_git:62 - 📡 Committing files to Git
+2023-10-14 16:56:21.327 | INFO     | __main__:push_to_git:65 - 🚀 Pushing to Git on branch main
+2023-10-14 16:56:29.531 | INFO     | __main__:push_to_git:67 - ✅ Push to Git successful
+2023-10-14 16:56:29.533 | INFO     | __main__:main:107 - 🎉 Deployment successful! 🎉
