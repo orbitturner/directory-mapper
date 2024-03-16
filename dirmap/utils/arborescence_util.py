@@ -5,7 +5,7 @@ import re
 from loguru import logger
 import yaml
 from rich import print
-from src.utils.orbit_tree_builder import dir_tree_builder
+from dirmap.utils.orbit_tree_builder import dir_tree_builder
 
 file_identifier = "File"
 
