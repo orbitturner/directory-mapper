@@ -1,7 +1,7 @@
 {
     "name": "DIRECTORY-MAPPER",
     "description": "A tool for mapping & creating directories",
-    "version": "1.6.3",
+    "version": "1.6.4",
     "author": "Orbit Turner",
     "license": "MIT",
     "deploy-branch": "main"

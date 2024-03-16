@@ -97,16 +97,16 @@ dirmap check-update
 
 ## 🖼️ **Screenshots**
 
-See the [Assets Folder](./.assets) for more screens.
+See the [Assets Folder](https://github.com/orbitturner/directory-mapper/tree/main/.assets) for more screens.
 
 ## 🔄 **Updates**
 
-Follow the [project's updates](./versions-history.json).
+Follow the [project's updates](https://github.com/orbitturner/directory-mapper/blob/main/versions-history.json).
 
 ## 🤝 **Contributions**
 
-Contributions are welcome! Check the [contribution guide](CONTRIBUTING.md) to get started.
+Contributions are welcome! Check the [contribution guide](https://github.com/orbitturner/directory-mapper/blob/main/CONTRIBUTING.md) to get started.
 
 ## 📄 **License**
 
-This project is under the MIT license. Check the [LICENSE](LICENSE) file for more details.
+This project is under the MIT license. Check the [LICENSE](https://github.com/orbitturner/directory-mapper/blob/main/LICENSE.md) file for more details.
