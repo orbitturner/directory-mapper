@@ -5,6 +5,7 @@ __pycache__
 # Logs
 logs/*.log
 dirmap/logs/*.log
+dirmap_logs
 
 # Builds
 build

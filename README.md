@@ -36,14 +36,15 @@
 
 - **Python** installed on your machine.
 - **Pip** installed on your machine.
-- **Git** installed on your machine.
 
 ## 📥 **Installation**
 
 ### 🚀 **Installation on Windows**
 
-```powershell
-Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1' | Invoke-Expression
+- Execute this command as Admin:
+
+```bash
+pip install directory-mapper --force
 
 ```
 
@@ -52,7 +53,7 @@ Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubuserconte
 ### 🐧 **Installation on Linux**
 
 ```bash
-wget https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh && sudo bash linux-installer.sh
+pip install directory-mapper --force
 
 ```
 

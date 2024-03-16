@@ -70,7 +70,7 @@ def push_to_git(branch, commit_message):
 def main():
     # Get the directory of the current script
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    logFileName = os.path.join(current_dir,'..', "dirmap_events.log")
+    logFileName = os.path.join(current_dir, "dirmap_log", "dirmap_events.log")
     # Configure logs with Loguru
     logger.remove()
     logger.add(logFileName, rotation="10 MB", level="DEBUG")
