@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read()
 
-with open("manifest.json", "r", encoding="utf-8") as fh:
+with open("dirmap/manifest.json", "r", encoding="utf-8") as fh:
     manifest_data = json.load(fh)
     version = manifest_data.get("version", "1.0.0")  # Default to 1.0.0 if version is not found
 

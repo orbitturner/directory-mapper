@@ -6,6 +6,8 @@ from datetime import datetime
 from subprocess import check_output, run
 from loguru import logger
 
+MANIFEST_FILE = "dirmap/manifest.json"
+
 def get_version_type():
     print("🚀 Quel type de version voulez-vous déployer ?")
     print("1. Major")
@@ -37,7 +39,7 @@ def get_last_commit_message():
     return check_output(["git", "log", "-1", "--pretty=%B"]).decode().strip()
 
 def update_manifest_version(version):
-    with open("manifest.json", "r+") as manifest_file:
+    with open(MANIFEST_FILE, "r+") as manifest_file:
         manifest = json.load(manifest_file)
         manifest["version"] = version
         manifest_file.seek(0)
@@ -80,7 +82,7 @@ def main():
     logger.info("🌟 Deployment Start 🌟")
 
     # Get the current version from manifest.json
-    with open("manifest.json") as manifest_file:
+    with open(MANIFEST_FILE) as manifest_file:
         manifest = json.load(manifest_file)
         current_version = manifest["version"]
         deploy_branch = manifest.get("deploy-branch", "main")  # If the key is not specified, use "main"

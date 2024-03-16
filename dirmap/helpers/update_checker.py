@@ -16,7 +16,7 @@ LOCAL_MANIFEST_PATH = os.path.join(current_dir,'..', 'manifest.json')
 
 
 # Remote manifest.json URL
-REMOTE_MANIFEST_URL = "https://raw.githubusercontent.com/orbitturner/directory-mapper/main/manifest.json"
+REMOTE_MANIFEST_URL = "https://raw.githubusercontent.com/orbitturner/directory-mapper/main/dirmap/manifest.json"
 
 
 def check_for_update():
@@ -61,9 +61,9 @@ def get_install_command():
     os_name = platform.system()
 
     if os_name == "Windows":
-        return "Set-ExecutionPolicy RemoteSigned; Invoke-WebRequest 'https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/windows-installer.ps1' | Invoke-Expression"
+        return "pip install directory-mapper --force"
     elif os_name == "Linux":
-        return "wget https://raw.githubusercontent.com/orbitturner/directory-mapper/main/setups/linux-installer.sh && bash linux-installer.sh"
+        return "pip install directory-mapper --force"
     else:
         return f"The operating system {os_name} is not supported."
 
