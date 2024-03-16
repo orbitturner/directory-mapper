@@ -112,5 +112,11 @@
         "date": "2024-03-16",
         "description": "docs(DIRECTORY-MAPPER): :memo: README File Update\n\nUpdated Cover Src URL",
         "name": "skean-funny"
+    },
+    {
+        "version": "1.6.5",
+        "date": "2024-03-16",
+        "description": "perf(DIRECTORY-MAPPER): :construction_worker: Build Size Improvement\n\nFrom 11.9mb to 21.8 kb",
+        "name": "daybed-romantic"
     }
 ]
