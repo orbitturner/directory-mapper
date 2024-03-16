@@ -94,5 +94,11 @@
         "date": "2024-03-16",
         "description": "feat(DIRECTORY-MAPPER): :rocket: DEPLOYMENT SYSTEM FINISHED\n\n- Fixed Update Checker Manifest Path.\n- Changed Manifest.json path.\n- Finished Distribution system",
         "name": "watery-proud"
+    },
+    {
+        "version": "1.6.2",
+        "date": "2024-03-16",
+        "description": "feat(DIRECTORY-MAPPER): :rocket: DEPLOYMENT SYSTEM FINISHED\n\n- Fixed Update Checker Manifest Path.\n- Changed Manifest.json path.\n- Finished Distribution system",
+        "name": "reason-quiet"
     }
 ]

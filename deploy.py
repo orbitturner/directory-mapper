@@ -5,6 +5,7 @@ from wonderwords import RandomWord
 from datetime import datetime
 from subprocess import check_output, run, CalledProcessError
 from loguru import logger
+import shutil
 
 MANIFEST_FILE = "dirmap/manifest.json"
 
@@ -91,7 +92,7 @@ def execute_additional_operations():
         logger.info("🗑 Cleaning up build artifacts")
         directories_to_remove = ['directory_mapper.egg-info', 'build', 'dist']
         for directory in directories_to_remove:
-            run(["rm", "-rf", directory], check=True)
+            shutil.rmtree(directory, ignore_errors=True)
 
         logger.info("✅ Clean up successful")
     except CalledProcessError as e:
