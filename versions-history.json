@@ -82,5 +82,11 @@
         "date": "2024-03-16",
         "description": "feat(DIRECTORY-MAPPER): :construction: Distribution System\n\n-> Logfile Emplacement",
         "name": "emery-dry"
+    },
+    {
+        "version": "1.6.0",
+        "date": "2024-03-16",
+        "description": "feat(DIRECTORY-MAPPER): :rocket: DEPLOYMENT SYSTEM FINISHED\n\n- Fixed Update Checker Manifest Path.\n- Changed Manifest.json path.\n- Finished Distribution system",
+        "name": "font-psychedelic"
     }
 ]
