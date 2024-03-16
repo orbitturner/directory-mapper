@@ -1,5 +1,6 @@
 import json
 import sys
+import os
 from wonderwords import RandomWord
 from datetime import datetime
 from subprocess import check_output, run
@@ -67,9 +68,12 @@ def push_to_git(branch, commit_message):
     logger.info("✅ Push to Git successful")
 
 def main():
-    logger.remove()
+    # Get the directory of the current script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    logFileName = os.path.join(current_dir,'..', "dirmap_events.log")
     # Configure logs with Loguru
-    logger.add("logs/dirmap_events.log", rotation="10 MB", level="DEBUG")
+    logger.remove()
+    logger.add(logFileName, rotation="10 MB", level="DEBUG")
     # Add another handler for the console, but only for INFO and higher levels
     logger.add(sys.stdout, level="INFO")
 

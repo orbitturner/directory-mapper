@@ -1,6 +1,7 @@
 # orbit_directory_mapper.py
 import argparse
 import sys
+import os
 from loguru import logger
 from termcolor import colored
 from art import text2art
@@ -83,9 +84,13 @@ def bootstrap():
 
     args = parser.parse_args()
 
+    # Get the directory of the current script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    logFileName = os.path.join(current_dir,'..', "dirmap_events.log")
+
     logger.remove()
     # Configure logs with Loguru
-    logger.add("logs/dirmap_events.log", rotation="10 MB", level="DEBUG")
+    logger.add(logFileName, rotation="10 MB", level="DEBUG")
     # Add another handler for the console, but only for INFO and higher levels
     logger.add(sys.stdout, level="INFO")
 

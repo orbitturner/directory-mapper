@@ -14,3 +14,4 @@ termcolor==2.4.0
 urllib3==2.2.0
 win32-setctime==1.1.0
 wonderwords==2.2.0
+setuptools
