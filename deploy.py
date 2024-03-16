@@ -3,18 +3,18 @@ import sys
 import os
 from wonderwords import RandomWord
 from datetime import datetime
-from subprocess import check_output, run
+from subprocess import check_output, run, CalledProcessError
 from loguru import logger
 
 MANIFEST_FILE = "dirmap/manifest.json"
 
 def get_version_type():
-    print("🚀 Quel type de version voulez-vous déployer ?")
+    print("🚀 What type of version do you want to deploy?")
     print("1. Major")
     print("2. Minor")
     print("3. Patch")
 
-    choice = input("Entrez le numéro correspondant : ")
+    choice = input("Enter the corresponding number: ")
     return {"1": "major", "2": "minor", "3": "patch"}.get(choice)
 
 def increment_version(version, version_type):
@@ -66,8 +66,37 @@ def push_to_git(branch, commit_message):
     run(["git", "add", "."], check=True)
     run(["git", "commit", "-m", commit_message], check=True)
     logger.info(f"🚀 Pushing to Git on branch {branch}")
-    run(["git", "push", "origin", branch], check=True)
+    try:
+        run(["git", "push", "origin", branch], check=True)
+    except CalledProcessError as e:
+        logger.error(f"❌ Error pushing to Git: {e}")
+        sys.exit(1)
     logger.info("✅ Push to Git successful")
+    
+    # Execute additional operations after push
+    execute_additional_operations()
+
+def execute_additional_operations():
+    logger.info("🔧 Executing additional operations after push")
+    try:
+        # Execute `python setup.py sdist bdist_wheel`
+        logger.info("📦 Building distribution packages")
+        run(["python", "setup.py", "sdist", "bdist_wheel"], check=True)
+
+        # Execute `twine upload dist/*`
+        logger.info("🚀 Uploading distribution packages to PyPI")
+        run(["twine", "upload", "dist/*"], check=True)
+
+        # Remove directories: 'directory_mapper.egg-info', 'build', and 'dist'
+        logger.info("🗑 Cleaning up build artifacts")
+        directories_to_remove = ['directory_mapper.egg-info', 'build', 'dist']
+        for directory in directories_to_remove:
+            run(["rm", "-rf", directory], check=True)
+
+        logger.info("✅ Clean up successful")
+    except CalledProcessError as e:
+        logger.error(f"❌ Error executing additional operations: {e}")
+        sys.exit(1)
 
 def main():
     # Get the directory of the current script
