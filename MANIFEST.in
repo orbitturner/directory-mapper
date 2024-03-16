@@ -1,3 +1,6 @@
 include README.md
 include manifest.json
 include LICENSE.md
+include manifest.json
+include src/settings.json
+include versions-history.json
