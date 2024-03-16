@@ -100,5 +100,11 @@
         "date": "2024-03-16",
         "description": "feat(DIRECTORY-MAPPER): :rocket: DEPLOYMENT SYSTEM FINISHED\n\n- Fixed Update Checker Manifest Path.\n- Changed Manifest.json path.\n- Finished Distribution system",
         "name": "reason-quiet"
+    },
+    {
+        "version": "1.6.3",
+        "date": "2024-03-16",
+        "description": "docs(DIRECTORY-MAPPER): :memo: README File Update\n\nUpdated Cover Src URL",
+        "name": "exclamation-large"
     }
 ]
