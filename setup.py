@@ -21,9 +21,12 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/orbitturner/directory-mapper',
+    project_urls={
+        "Bug Tracker": "https://github.com/orbitturner/directory-mapper/issues/new",
+    },
     packages=find_packages(),
+    include_package_data=True, # Include additional files into the package
     install_requires=[requirements],
-    include_package_data=True,
     python_requires='>=3.7',
     classifiers=[
         "Programming Language :: Python :: 3.8",
