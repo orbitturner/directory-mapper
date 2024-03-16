@@ -4,4 +4,3 @@ include LICENSE.md
 include dirmap/manifest.json
 include dirmap/settings.json
 include versions-history.json
-graft .assets
