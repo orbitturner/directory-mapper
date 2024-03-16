@@ -34,6 +34,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        dirmap=src.orbit_directory_mapper:main
+        dirmap=dirmap.orbit_directory_mapper:main
     '''
 )
