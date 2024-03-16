@@ -86,7 +86,7 @@ def bootstrap():
 
     # Get the directory of the current script
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    logFileName = os.path.join(current_dir,"dirmap_log", "dirmap_events.log")
+    logFileName = os.path.join(current_dir,"dirmap_logs", "dirmap_events.log")
 
     logger.remove()
     # Configure logs with Loguru
