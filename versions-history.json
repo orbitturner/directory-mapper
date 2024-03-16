@@ -34,5 +34,11 @@
         "date": "2023-10-14",
         "description": "docs(DIRECTORY-MAPPER): :page_facing_up: Added LIcence & Important Files for OSS\n\ndocs: \u2728 Add Contribution Guidelines and Code of Conduct  - Created a Contribution.md file to guide contributors in setting up the development environment and making contributions. - Added a Code of Conduct outlining the expected behavior for all contributors.",
         "name": "louse-greedy"
+    },
+    {
+        "version": "1.4.0",
+        "date": "2024-03-16",
+        "description": "feat(DIRECTORY-MAPPER): :sparkles: WORKING ON A NEW PACKAGING\n\nNew Distrituion system WIP",
+        "name": "raspberry-stupid"
     }
 ]

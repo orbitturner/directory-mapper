@@ -4,11 +4,13 @@ __pycache__
 
 # Logs
 logs/*.log
+src/logs/*.log
 
 # Builds
 build
 dist
 *.spec
+pyinstaller
 
 # Envs
 venv
