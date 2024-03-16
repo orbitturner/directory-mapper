@@ -7,7 +7,7 @@ from rich.markup import escape
 from rich.text import Text
 from rich.tree import Tree
 
-from utils.settings_manager import Settings
+from src.utils.settings_manager import Settings
 
 SettingManager = Settings()
 

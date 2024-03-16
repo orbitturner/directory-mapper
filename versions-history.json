@@ -46,5 +46,11 @@
         "date": "2024-03-16",
         "description": "feat(DIRECTORY-MAPPER): :sparkles: WORKING ON A NEW PACKAGING\n\nNew Distrituion system WIP",
         "name": "catalogue-tacky"
+    },
+    {
+        "version": "1.4.2",
+        "date": "2024-03-16",
+        "description": "feat(DIRECTORY-MAPPER): :sparkles: WORKING ON A NEW PACKAGING\n\nNew Distrituion system WIP",
+        "name": "quizzical-fabulous"
     }
 ]

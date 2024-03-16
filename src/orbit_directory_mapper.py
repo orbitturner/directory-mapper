@@ -4,9 +4,9 @@ import sys
 from loguru import logger
 from termcolor import colored
 from art import text2art
-from utils.arborescence_util import draw_directory_structure, create_directory, display_directory_format
-from helpers.update_checker import check_for_update
-from utils.settings_menu import edit_settings_menu
+from src.utils.arborescence_util import draw_directory_structure, create_directory, display_directory_format
+from src.helpers.update_checker import check_for_update
+from src.utils.settings_menu import edit_settings_menu
 
 # ========================
 # UTILS
@@ -43,7 +43,7 @@ def check_update_command(args):
     check_for_update()
 
 def settings_menu_command(args):
-    from utils.settings_menu import Settings
+    from src.utils.settings_menu import Settings
     settings_manager = Settings()
     edit_settings_menu(settings_manager)
 # ========================

@@ -1,6 +1,6 @@
 from rich import print
 from rich.prompt import Prompt
-from utils.settings_manager import Settings
+from src.utils.settings_manager import Settings
 
 def display_settings(settings):
     print()
