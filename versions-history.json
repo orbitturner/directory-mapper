@@ -64,5 +64,11 @@
         "date": "2024-03-16",
         "description": "feat(DIRECTORY-MAPPER): :construction: Distribution System\n\nWorking on the packaging and distribution system. Changed Main Package Name",
         "name": "pate-truculent"
+    },
+    {
+        "version": "1.4.5",
+        "date": "2024-03-16",
+        "description": "feat(DIRECTORY-MAPPER): :construction: Distribution System\n\n-> Changed Entrypoint of CLI Tool",
+        "name": "job-spotless"
     }
 ]
