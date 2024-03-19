@@ -8,13 +8,14 @@ from art import text2art
 from dirmap.utils.arborescence_util import draw_directory_structure, create_directory, display_directory_format
 from dirmap.helpers.update_checker import check_for_update
 from dirmap.utils.settings_menu import edit_settings_menu
+from dirmap.helpers.manifest_helper import get_current_version, get_project_info
 
 # ========================
 # UTILS
 # ========================
 def print_colored_ascii_art():
-    text = "Orbit Directory Mapper"
-    colored_ascii_art = colored(text2art(text), 'cyan')
+    text = "Directory Mapper"
+    colored_ascii_art = colored(text2art(text, "small"), 'cyan')
     print(colored_ascii_art)
 # ========================
 
@@ -47,6 +48,18 @@ def settings_menu_command(args):
     from dirmap.utils.settings_menu import Settings
     settings_manager = Settings()
     edit_settings_menu(settings_manager)
+
+def version_command():
+    # Get the current version and project information
+    current_version = get_current_version()
+    author, license = get_project_info()
+
+    if current_version:
+        print(f"➢ Current version: {current_version}\n")
+    if author:
+        print(f"\n⪢ Author: {author}")
+    if license:
+        print(f"⪢ License: {license}")
 # ========================
 
 # ========================
@@ -56,7 +69,9 @@ def bootstrap():
     # Welcome message
     print_colored_ascii_art()
     parser = argparse.ArgumentParser(description="Display or Create a Folder Structure in a Second.")
-    subparsers = parser.add_subparsers(title="Commands", dest="command", metavar="{view, create, check-update, settings}", required=True)
+    # Add parser for the version command
+    parser.add_argument('-v', '--version', action='store_true', help="Display current version and project information", dest='version')
+    subparsers = parser.add_subparsers(title="Commands", dest="command")
 
     # Parser for the view command
     view_parser = subparsers.add_parser("view", help="Display the structure of a folder (default)")
@@ -94,12 +109,19 @@ def bootstrap():
     # Add another handler for the console, but only for INFO and higher levels
     logger.add(sys.stdout, level="INFO")
 
-    # Execute the function associated with the sub-command
-    if hasattr(args, 'func'):
-        args.func(args)
+    # Check if -v or --version options are present
+    if args.version:
+        version_command()
     else:
-        # If no sub-command is specified, execute the default command (view)
-        check_for_update(args)
+        # Execute the function associated with the sub-command
+        if hasattr(args, 'func'):
+            args.func(args)
+        else:
+            # If no sub-command is specified, execute the default command (version and help)
+            version_command()
+            print("\n⮚⮚⮚⮚⮚⮚⮚⮚⮚⮚⮚⮚ ORBIT DIRECTORY MAPPER HELP MENU ⮘⮘⮘⮘⮘⮘⮘⮘⮘⮘⮘⮘\n")
+            parser.print_help()
+
 
 
 

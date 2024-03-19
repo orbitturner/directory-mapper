@@ -3,6 +3,6 @@
     "description": "A tool for mapping & creating directories",
     "version": "1.6.5",
     "author": "Orbit Turner",
-    "license": "MIT",
+    "license": "CC BY-NC-SA 4.0",
     "deploy-branch": "main"
 }

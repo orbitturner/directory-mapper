@@ -53,7 +53,7 @@ pip install directory-mapper --force
 ### 🐧 **Installation on Linux**
 
 ```bash
-pip install directory-mapper --force
+sudo pip install directory-mapper --force
 
 ```
 

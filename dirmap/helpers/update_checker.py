@@ -63,7 +63,7 @@ def get_install_command():
     if os_name == "Windows":
         return "pip install directory-mapper --force"
     elif os_name == "Linux":
-        return "pip install directory-mapper --force"
+        return "sudo pip install directory-mapper --force"
     else:
         return f"The operating system {os_name} is not supported."
 
