@@ -57,7 +57,13 @@ sudo pip install directory-mapper --force  --no-cache-dir
 
 ```
 
-For updates, simply run the same command again.
+For updates, simply run the install command again.
+
+### 🗑️ **Uninstallation**
+
+```bash
+sudo pip uninstall directory-mapper
+```
 
 ## 🧑‍💻 **Usage**
 

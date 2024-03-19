@@ -130,5 +130,11 @@
         "date": "2024-03-19",
         "description": "docs(DIRECTORY-MAPPER): :memo: Changed Install Script\n\nInstall Command changed",
         "name": "tray-changeable"
+    },
+    {
+        "version": "1.7.2",
+        "date": "2024-03-19",
+        "description": "docs(DIRECTORY-MAPPER): :memo: Changed Install Script\n\nInstall Command changed",
+        "name": "briefs-arrogant"
     }
 ]
