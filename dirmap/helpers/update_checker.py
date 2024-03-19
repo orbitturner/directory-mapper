@@ -49,7 +49,7 @@ def check_for_update():
         # Compare versions
         if LooseVersion(remote_version) > LooseVersion(local_version):
             print(f"{EMOJI_WARNING} New version available: {remote_version}")
-            install_command = get_install_command()
+            install_command = get_install_command(remote_version)
             print(f"🔁 To update, execute the following command:\n{install_command}")
         else:
             print("No updates available.")
@@ -58,12 +58,12 @@ def check_for_update():
 
 import platform
 
-def get_install_command():
+def get_install_command(versionNumber):
     # Determine the operating system
     os_name = platform.system()
 
     # Define the base install command
-    install_command = "pip install directory-mapper --force  --no-cache-dir"
+    install_command = f"pip install directory-mapper=={versionNumber} --force"
 
     # Add platform-specific prefix if applicable
     if os_name == "Windows":

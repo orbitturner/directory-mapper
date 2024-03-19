@@ -44,7 +44,7 @@
 - Execute this command as Admin:
 
 ```bash
-pip install directory-mapper --force  --no-cache-dir
+pip install directory-mapper --force
 
 ```
 
@@ -53,7 +53,7 @@ pip install directory-mapper --force  --no-cache-dir
 ### 🐧 **Installation on Linux**
 
 ```bash
-sudo pip install directory-mapper --force  --no-cache-dir
+sudo pip install directory-mapper --force
 
 ```
 
