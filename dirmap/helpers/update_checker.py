@@ -56,16 +56,23 @@ def check_for_update():
     except Exception as e:
         print(f"{EMOJI_WARNING} An error occurred while checking for updates: {e}")
 
+import platform
+
 def get_install_command():
     # Determine the operating system
     os_name = platform.system()
 
+    # Define the base install command
+    install_command = "pip install directory-mapper --force  --no-cache-dir"
+
+    # Add platform-specific prefix if applicable
     if os_name == "Windows":
-        return "pip install directory-mapper --force"
+        return install_command
     elif os_name == "Linux":
-        return "sudo pip install directory-mapper --force"
+        return "sudo " + install_command
     else:
         return f"The operating system {os_name} is not supported."
+
 
 if __name__ == "__main__":
     check_for_update()
