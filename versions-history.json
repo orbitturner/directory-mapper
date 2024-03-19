@@ -124,5 +124,11 @@
         "date": "2024-03-19",
         "description": "feat(DIRECTORY-MAPPER): :sparkles: CLI QOL IMPROVEMENT & WRAPPING\n\nWrapping up the Bootstrap and added Version Command and his aliases.\n- Changed default launching Command.\n- Added entrypoint for development testing.\n- Changed Installation Command.",
         "name": "woodland-jazzy"
+    },
+    {
+        "version": "1.7.1",
+        "date": "2024-03-19",
+        "description": "docs(DIRECTORY-MAPPER): :memo: Changed Install Script\n\nInstall Command changed",
+        "name": "tray-changeable"
     }
 ]
